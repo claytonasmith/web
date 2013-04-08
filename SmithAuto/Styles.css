@@ -1,0 +1,149 @@
+@charset "utf-8";
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #ffffff;
+}
+#container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+}
+#banner {
+	height: 100px;
+	background-image: url(images/Smith%27s-banner.jpg);
+	position: relative;
+	top: 0px;
+	right: 0px;
+}
+#phonetext {
+	font-size: 30px;
+	color: #FFF;
+	width: 210px;
+	position: absolute;
+	top: 497px;
+	right: 683px;
+	height: auto;
+	float: right;
+}
+#auto_repair_text {
+	width: 350px;
+	font-size: 36px;
+	position: absolute;
+	height: auto;
+	bottom: 0px;
+	color: #999;
+	right: 0px;
+	float: right;
+}
+#main {
+	background-repeat: no-repeat;
+	position: relative;
+	height: 530px;
+	width: 960px;
+	background-image: url(images/main-image-shop.jpg);
+}
+#main_text_box {
+	background-color: #333;
+	height: 350px;
+	width: 320px;
+	left: 0px;
+	opacity: .5;
+	bottom: 0px;
+	position: absolute;
+}
+#established_text  {
+	padding-left: 15px;
+	position: absolute;
+	color: #FFF;
+	width: 200px;
+	font-size: 24px;
+	left: 20px;
+	height: 30px;
+	bottom: 300px;
+}
+#main_text2 {
+	position: absolute;
+	color: #FFF;
+	width: 260px;
+	height: 100px;
+	left: 20px;
+	padding-left: 15px;
+	bottom: 190px;
+}
+#lower-region {
+	background-color: #666;
+	width: 960px;
+	height: 200px;
+	opacity: .5;
+}
+#left_column, #center_column, #right_column {
+	width: 320px;
+	float: left;
+	vertical-align: middle;
+}
+#center_column, #right_column {
+	margin-left: 0px;
+}
+
+	#ChrisJuneIND_thumbnail {
+	left: 0%;
+	width: 65px;
+	float: left;
+}
+#review_title {
+	float:left;
+	padding-left: 5px;
+	width: 200px;
+}
+#five_star {
+	width: 88px;
+	float: left;
+}
+#review_body {
+	float:left;
+	width: 300px;
+}
+#photos, #reviews , #contact{
+	text-align: center;
+	font-size: 24px;
+	color: #999;
+	padding-bottom: 10px;
+}
+
+#A:link {text-decoration: none; color: #FFF} 
+#A:visited {text-decoration: none; color: #FFF} 
+#A:hover { text-decoration: none; color: #ff0000 } 
+#container #right_column ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+#container #right_column ul li {
+	line-height: 32px;
+}
+#container #right_column ul li #address_text {
+	background-image: url(icons/map_icon.png);
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	background-position: 0% 50%;
+}
+#container #right_column ul li #email {
+	padding-left: 40px;
+	background-image: url(icons/envelope_icon.png);
+	background-repeat: no-repeat;
+}
+#container #right_column ul li #hours {
+	padding-left: 40px;
+	background-image: url(icons/location_icon.png);
+	background-repeat: no-repeat;
+}
+#container #right_column ul li #phonediv {
+	padding-left: 40px;
+	background-image: url(icons/contact_us.png);
+	background-repeat: no-repeat;
+}

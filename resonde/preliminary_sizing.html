@@ -1,0 +1,252 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Preliminary Sizing for reSonde</title><meta name="generator" content="MATLAB 7.14"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2013-02-18"><meta name="DC.source" content="preliminary_sizing.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, tt, code { font-size:12px; }
+pre { margin:0px 0px 20px; }
+pre.error { color:red; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+
+  </style></head><body><div class="content"><h1>Preliminary Sizing for reSonde</h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Aircraft Parameters</a></li><li><a href="#2">Conditions</a></li><li><a href="#3">Mission Profile</a></li><li><a href="#4">Calculate atmospheric parameters based on altitude using <tt>atmoscoesa</tt>:</a></li><li><a href="#5">Best glide speed:</a></li><li><a href="#6">Best glide slope:</a></li><li><a href="#7">Best glide lift and drag:</a></li><li><a href="#8">Verification</a></li></ul></div><h2>Aircraft Parameters<a name="1"></a></h2><pre class="codeinput">clear, clc, close <span class="string">all</span>
+m_merlin_vehicle=convmass(0.385,<span class="string">'kg'</span>,<span class="string">'slug'</span>); <span class="comment">% Merlin glider, flight ready,with gopro, no motor</span>
+W = m_merlin_vehicle * 32.2; <span class="comment">% weight, lbf</span>
+b = 31/12; <span class="comment">% merlin span, ft</span>
+S = 175/12^2;  <span class="comment">% merlin wing reference area, ft^2;</span>
+c = S/b; <span class="comment">% wing mac</span>
+AR = b^2/S; <span class="comment">% wing aspect ratio</span>
+C_D0 = 0.0150; <span class="comment">% guess, flaps up parasite drag coefficient</span>
+e = 1.78*(1-.045*AR^0.68)-0.64; <span class="comment">% airplane efficiency factor, Raymer p347</span>
+</pre><h2>Conditions<a name="2"></a></h2><pre class="codeinput">h = 1000; <span class="comment">% altitude, ft</span>
+mu = 1.81E-5; <span class="comment">% kg/(m*s) viscosity of air at 15degC</span>
+h_m = convlength(h,<span class="string">'ft'</span>,<span class="string">'m'</span>);
+phi = 0; <span class="comment">% bank angle, deg</span>
+</pre><h2>Mission Profile<a name="3"></a></h2><p>wind=convvel(5,'kts','m/s'); buoy=convvel(1000,'ft/min','m/s'); h_max=convlength(100000,'ft','m');</p><h2>Calculate atmospheric parameters based on altitude using <tt>atmoscoesa</tt>:<a name="4"></a></h2><p>atmoscoesa is basically ICAO data plus data for &gt;60,000ft</p><pre class="codeinput">[T, a, P, rho] = atmoscoesa(h_m, <span class="string">'Warning'</span>);
+rho_imperial = convdensity(rho,<span class="string">'kg/m^3'</span>,<span class="string">'slug/ft^3'</span>);
+</pre><h2>Best glide speed:<a name="5"></a></h2><pre class="codeinput">TAS_bg = sqrt((2*W) / (rho_imperial*S))<span class="keyword">...</span>
+         *(1./(4*C_D0.^2 + C_D0.*pi*e*AR*cos(phi)^2)).^(1/4); <span class="comment">% TAS, fps</span>
+KTAS_bg = convvel(TAS_bg,<span class="string">'ft/s'</span>,<span class="string">'kts'</span>)';
+KCAS_bg = correctairspeed(KTAS_bg,a,P,<span class="string">'TAS'</span>,<span class="string">'CAS'</span>)';
+V_bg = convvel(TAS_bg,<span class="string">'ft/s'</span>,<span class="string">'m/s'</span>); <span class="comment">% TAS, m/s</span>
+mach_bg = machnumber([V_bg,0,0],a); <span class="comment">% mach number</span>
+Re_bg = rho*V_bg*c/mu; <span class="comment">% Reynolds # at best glide speed</span>
+</pre><h2>Best glide slope:<a name="6"></a></h2><pre class="codeinput">LODmax=1/2*sqrt(pi*AR*e/C_D0)
+gamma_bg_rad = asin( -sqrt((4.*C_D0')./(pi*e*AR*cos(phi)^2 + 4.*C_D0')) );
+gamma_bg = convang(gamma_bg_rad,<span class="string">'rad'</span>,<span class="string">'deg'</span>) <span class="comment">% best glide slope, deg</span>
+
+<span class="comment">% nmi range gliding from 40,000ft</span>
+range_bg=40000/tand(-gamma_bg)/5280
+</pre><pre class="codeoutput">
+LODmax =
+
+   15.9515
+
+
+gamma_bg =
+
+   -3.5872
+
+
+range_bg =
+
+  120.8449
+
+</pre><h2>Best glide lift and drag:<a name="7"></a></h2><pre class="codeinput">D_bg = -W*sin(gamma_bg_rad);
+L_bg =  W*cos(gamma_bg_rad);
+
+qbar = dpressure([TAS_bg' zeros(size(TAS_bg,2),2)], rho_imperial);
+C_D_bg = D_bg./(qbar*S)
+C_L_bg = L_bg./(qbar*S)
+
+<span class="comment">% debugging ~~~~~</span>
+<span class="comment">% speeds=5:5:30;</span>
+<span class="comment">% qbar_alt = dpressure([speeds', zeros(size(speeds,2),2)], rho_imperial)</span>
+<span class="comment">% C_D = D_bg./(qbar_alt*S)</span>
+<span class="comment">% C_L = L_bg./(qbar_alt*S)</span>
+<span class="comment">% figure(3),clf, plot(speeds,C_L)</span>
+</pre><pre class="codeoutput">
+C_D_bg =
+
+    0.0300
+
+
+C_L_bg =
+
+    0.4785
+
+</pre><h2>Verification<a name="8"></a></h2><p>Plots to make sure my calcs are right:</p><pre class="codeinput">TAS = (10:100)'; <span class="comment">% true airspeed, fps</span>
+KTAS = convvel(TAS,<span class="string">'ft/s'</span>,<span class="string">'kts'</span>)'; <span class="comment">% true airspeed, kts</span>
+KCAS = correctairspeed(KTAS,a,P,<span class="string">'TAS'</span>,<span class="string">'CAS'</span>)'; <span class="comment">% corrected airspeed, kts</span>
+qbar = dpressure([TAS zeros(size(TAS,1),2)], rho_imperial);
+Dp = qbar*S.*C_D0; <span class="comment">% parasite drag</span>
+Di = (2*W^2)/(rho_imperial*S*pi*e*AR).*(TAS.^-2); <span class="comment">% induced drag</span>
+D = Dp + Di;
+alp_bg=C_L_bg/(2*pi)*180/pi;
+<span class="comment">% from above, the angle of attack is about 7 degrees. Adding the flight path angle (i.e. best glide angle) from above shows the fuselage pitch (attitude angle theta) to be about 2 degrees.</span>
+L = W;
+</pre><p><b>Plot L/D versus KCAS</b></p><pre class="codeinput">h1 = figure(1); clf
+plot(KCAS,L./D);
+title(<span class="string">'reSonde: L/D vs. KCAS'</span>);
+xlabel(<span class="string">'KCAS'</span>); ylabel(<span class="string">'L/D'</span>);
+hold <span class="string">on</span>
+plot(KCAS_bg,L_bg/D_bg,<span class="string">'Marker'</span>,<span class="string">'o'</span>,<span class="string">'MarkerFaceColor'</span>,<span class="string">'black'</span>,<span class="keyword">...</span>
+    <span class="string">'MarkerEdgeColor'</span>,<span class="string">'black'</span>,<span class="string">'Color'</span>,<span class="string">'white'</span>);
+hold <span class="string">off</span>
+legend(<span class="string">'L/D'</span>,<span class="string">'L_{bg}/D_{bg}'</span>,<span class="string">'Location'</span>,<span class="string">'Best'</span>);
+<span class="comment">% annotation('textarrow',[0.4225 0.4225],[0.23 0.12],'String','TAS_{bg}');</span>
+</pre><img vspace="5" hspace="5" src="preliminary_sizing_01.png" alt=""> <p><b>Plot parasite, induced, and total drag curves</b></p><pre class="codeinput">h2 = figure(2); clf
+plot(KCAS,Dp,KCAS,Di,KCAS,D);
+title(<span class="string">'reSonde: Parasite, induced, and total drag curves'</span>);
+xlabel(<span class="string">'KCAS'</span>); ylabel(<span class="string">'Drag, lbf'</span>);
+hold <span class="string">on</span>
+plot(KCAS_bg,D_bg,<span class="string">'Marker'</span>,<span class="string">'o'</span>,<span class="string">'MarkerFaceColor'</span>,<span class="string">'black'</span>,<span class="keyword">...</span>
+    <span class="string">'MarkerEdgeColor'</span>,<span class="string">'black'</span>,<span class="string">'Color'</span>,<span class="string">'white'</span>);
+hold <span class="string">off</span>
+legend(<span class="string">'Parasite, D_p'</span>,<span class="string">'Induced, D_i'</span>,<span class="string">'Total, D'</span>,<span class="string">'D_{bg}'</span>,<span class="string">'Location'</span>,<span class="string">'Best'</span>);
+<span class="comment">% annotation('textarrow',[0.4225 0.4225],[0.23 0.12],'String','TAS_{bg}');</span>
+</pre><img vspace="5" hspace="5" src="preliminary_sizing_02.png" alt=""> <p class="footer"><br>
+      Published with MATLAB&reg; 7.14<br></p></div><!--
+##### SOURCE BEGIN #####
+%% Preliminary Sizing for reSonde
+
+%% Aircraft Parameters
+clear, clc, close all
+m_merlin_vehicle=convmass(0.385,'kg','slug'); % Merlin glider, flight ready,with gopro, no motor
+W = m_merlin_vehicle * 32.2; % weight, lbf
+b = 31/12; % merlin span, ft
+S = 175/12^2;  % merlin wing reference area, ft^2;
+c = S/b; % wing mac
+AR = b^2/S; % wing aspect ratio
+C_D0 = 0.0150; % guess, flaps up parasite drag coefficient
+e = 1.78*(1-.045*AR^0.68)-0.64; % airplane efficiency factor, Raymer p347
+%% Conditions
+h = 1000; % altitude, ft
+mu = 1.81E-5; % kg/(m*s) viscosity of air at 15degC
+h_m = convlength(h,'ft','m');
+phi = 0; % bank angle, deg
+
+%% Mission Profile
+% wind=convvel(5,'kts','m/s');
+% buoy=convvel(1000,'ft/min','m/s');
+% h_max=convlength(100000,'ft','m');
+%% Calculate atmospheric parameters based on altitude using |atmoscoesa|:
+% atmoscoesa is basically ICAO data plus data for >60,000ft
+[T, a, P, rho] = atmoscoesa(h_m, 'Warning');
+rho_imperial = convdensity(rho,'kg/m^3','slug/ft^3');
+%% Best glide speed:
+TAS_bg = sqrt((2*W) / (rho_imperial*S))...
+         *(1./(4*C_D0.^2 + C_D0.*pi*e*AR*cos(phi)^2)).^(1/4); % TAS, fps
+KTAS_bg = convvel(TAS_bg,'ft/s','kts')';
+KCAS_bg = correctairspeed(KTAS_bg,a,P,'TAS','CAS')';
+V_bg = convvel(TAS_bg,'ft/s','m/s'); % TAS, m/s
+mach_bg = machnumber([V_bg,0,0],a); % mach number
+Re_bg = rho*V_bg*c/mu; % Reynolds # at best glide speed
+%% Best glide slope:
+LODmax=1/2*sqrt(pi*AR*e/C_D0)
+gamma_bg_rad = asin( -sqrt((4.*C_D0')./(pi*e*AR*cos(phi)^2 + 4.*C_D0')) );
+gamma_bg = convang(gamma_bg_rad,'rad','deg') % best glide slope, deg
+
+% nmi range gliding from 40,000ft
+range_bg=40000/tand(-gamma_bg)/5280
+
+%% Best glide lift and drag:
+D_bg = -W*sin(gamma_bg_rad);
+L_bg =  W*cos(gamma_bg_rad);
+
+qbar = dpressure([TAS_bg' zeros(size(TAS_bg,2),2)], rho_imperial);
+C_D_bg = D_bg./(qbar*S)
+C_L_bg = L_bg./(qbar*S)
+
+% debugging ~~~~~
+% speeds=5:5:30;
+% qbar_alt = dpressure([speeds', zeros(size(speeds,2),2)], rho_imperial)
+% C_D = D_bg./(qbar_alt*S)
+% C_L = L_bg./(qbar_alt*S)
+% figure(3),clf, plot(speeds,C_L)
+%% Verification
+% Plots to make sure my calcs are right:
+TAS = (10:100)'; % true airspeed, fps
+KTAS = convvel(TAS,'ft/s','kts')'; % true airspeed, kts
+KCAS = correctairspeed(KTAS,a,P,'TAS','CAS')'; % corrected airspeed, kts
+qbar = dpressure([TAS zeros(size(TAS,1),2)], rho_imperial);
+Dp = qbar*S.*C_D0; % parasite drag
+Di = (2*W^2)/(rho_imperial*S*pi*e*AR).*(TAS.^-2); % induced drag
+D = Dp + Di;
+alp_bg=C_L_bg/(2*pi)*180/pi;
+% from above, the angle of attack is about 7 degrees. Adding the flight path angle (i.e. best glide angle) from above shows the fuselage pitch (attitude angle theta) to be about 2 degrees.
+L = W;
+%%
+% *Plot L/D versus KCAS*
+h1 = figure(1); clf
+plot(KCAS,L./D);
+title('reSonde: L/D vs. KCAS');
+xlabel('KCAS'); ylabel('L/D');
+hold on
+plot(KCAS_bg,L_bg/D_bg,'Marker','o','MarkerFaceColor','black',...
+    'MarkerEdgeColor','black','Color','white');
+hold off
+legend('L/D','L_{bg}/D_{bg}','Location','Best');
+% annotation('textarrow',[0.4225 0.4225],[0.23 0.12],'String','TAS_{bg}');
+%%
+% *Plot parasite, induced, and total drag curves*
+h2 = figure(2); clf
+plot(KCAS,Dp,KCAS,Di,KCAS,D); 
+title('reSonde: Parasite, induced, and total drag curves');
+xlabel('KCAS'); ylabel('Drag, lbf'); 
+hold on
+plot(KCAS_bg,D_bg,'Marker','o','MarkerFaceColor','black',...
+    'MarkerEdgeColor','black','Color','white');
+hold off
+legend('Parasite, D_p','Induced, D_i','Total, D','D_{bg}','Location','Best');
+% annotation('textarrow',[0.4225 0.4225],[0.23 0.12],'String','TAS_{bg}');
+
+
+##### SOURCE END #####
+--></body></html>
