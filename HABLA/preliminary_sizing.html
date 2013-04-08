@@ -1,0 +1,231 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Preliminary Sizing for HABLA</title><meta name="generator" content="MATLAB 7.12"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2012-07-10"><meta name="DC.source" content="preliminary_sizing.m"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><h1>Preliminary Sizing for HABLA</h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Aircraft Parameters</a></li><li><a href="#2">Conditions</a></li><li><a href="#3">Mission Profile</a></li><li><a href="#4">Calculate atmospheric parameters based on altitude using <tt>atmoscoesa</tt>:</a></li><li><a href="#5">Best glide speed:</a></li><li><a href="#6">Best glide slope:</a></li><li><a href="#7">Best glide lift and drag:</a></li><li><a href="#8">Verification</a></li></ul></div><h2>Aircraft Parameters<a name="1"></a></h2><p>The aircraft parameters are declared as follows.</p><pre class="codeinput">m_gopro = convmass(.167,<span class="string">'kg'</span>,<span class="string">'lbm'</span>); <span class="comment">%GoPro mass (with housing), 94g without housing</span>
+m_apm = convmass(.021,<span class="string">'kg'</span>,<span class="string">'lbm'</span>); <span class="comment">% ardupilot mass, lbm</span>
+m_glider = (9.6+2.5)*.0625; <span class="comment">% glider with battery + servos</span>
+W = m_glider+m_apm+m_gopro; <span class="comment">% weight, lbf</span>
+b = 31/12; <span class="comment">% merlin span, ft</span>
+S = 175/12^2;  <span class="comment">% merlin wing reference area, ft^2;</span>
+A = b^2/S; <span class="comment">% wing aspect ratio</span>
+C_D0 = 0.0200; <span class="comment">% guess, flaps up parasite drag coefficient</span>
+e = 1.78*(1-.045*A^0.68)-0.64; <span class="comment">% airplane efficiency factor, Raymer p347</span>
+</pre><h2>Conditions<a name="2"></a></h2><pre class="codeinput">h = 1000; <span class="comment">% altitude, ft</span>
+h_m = convlength(h,<span class="string">'ft'</span>,<span class="string">'m'</span>);
+phi = 0; <span class="comment">% bank angle, deg</span>
+</pre><h2>Mission Profile<a name="3"></a></h2><pre class="codeinput">wind=convvel(5,<span class="string">'kts'</span>,<span class="string">'m/s'</span>);
+buoy=convvel(1000,<span class="string">'ft/min'</span>,<span class="string">'m/s'</span>);
+h_max=convlength(100000,<span class="string">'ft'</span>,<span class="string">'m'</span>);
+</pre><h2>Calculate atmospheric parameters based on altitude using <tt>atmoscoesa</tt>:<a name="4"></a></h2><p>atmoscoesa is basically ICAO data plus data for &gt;60,000ft</p><pre class="codeinput">[T, a, P, rho] = atmoscoesa(h_m, <span class="string">'Warning'</span>);
+rho = convdensity(rho,<span class="string">'kg/m^3'</span>,<span class="string">'slug/ft^3'</span>);
+</pre><h2>Best glide speed:<a name="5"></a></h2><pre class="codeinput">TAS_bg = sqrt((2*W) / (rho*S))<span class="keyword">...</span>
+         *(1./(4*C_D0.^2 + C_D0.*pi*e*A*cos(phi)^2)).^(1/4); <span class="comment">% TAS, fps</span>
+KTAS_bg = convvel(TAS_bg,<span class="string">'ft/s'</span>,<span class="string">'kts'</span>)';
+KCAS_bg = correctairspeed(KTAS_bg,a,P,<span class="string">'TAS'</span>,<span class="string">'CAS'</span>)';
+</pre><h2>Best glide slope:<a name="6"></a></h2><pre class="codeinput">LODmax=1/2*sqrt(pi*A*e/C_D0)
+gamma_bg_rad = asin( -sqrt((4.*C_D0')./(pi*e*A*cos(phi)^2 + 4.*C_D0')) );
+gamma_bg = convang(gamma_bg_rad,<span class="string">'rad'</span>,<span class="string">'deg'</span>) <span class="comment">% best glide slope, deg</span>
+
+<span class="comment">% nmi range gliding from 40,000ft</span>
+range_bg=40000/tand(-gamma_bg)/5280
+</pre><pre class="codeoutput">
+LODmax =
+
+   13.8144
+
+
+gamma_bg =
+
+   -4.1403
+
+
+range_bg =
+
+  104.6548
+
+</pre><h2>Best glide lift and drag:<a name="7"></a></h2><pre class="codeinput">D_bg = -W*sin(gamma_bg_rad);
+L_bg =  W*cos(gamma_bg_rad);
+
+qbar = dpressure([TAS_bg' zeros(size(TAS_bg,2),2)], rho);
+C_D_bg = D_bg./(qbar*S);
+C_L_bg = L_bg./(qbar*S);
+</pre><h2>Verification<a name="8"></a></h2><p>Plots to make sure my calcs are right:</p><pre class="codeinput">TAS = (10:100)'; <span class="comment">% true airspeed, fps</span>
+KTAS = convvel(TAS,<span class="string">'ft/s'</span>,<span class="string">'kts'</span>)'; <span class="comment">% true airspeed, kts</span>
+KCAS = correctairspeed(KTAS,a,P,<span class="string">'TAS'</span>,<span class="string">'CAS'</span>)'; <span class="comment">% corrected airspeed, kts</span>
+qbar = dpressure([TAS zeros(size(TAS,1),2)], rho);
+Dp = qbar*S.*C_D0; <span class="comment">% parasite drag</span>
+Di = (2*W^2)/(rho*S*pi*e*A).*(TAS.^-2); <span class="comment">% induced drag</span>
+D = Dp + Di;
+alp_bg=C_L_bg/(2*pi)*180/pi;
+<span class="comment">% from above, the angle of attack is about 7 degrees. Adding the flight path angle (i.e. best glide angle) from above shows the fuselage pitch (attitude angle theta) to be about 2 degrees.</span>
+L = W;
+</pre><p><b>Plot L/D versus KCAS</b></p><pre class="codeinput">h1 = figure(1);
+plot(KCAS,L./D);
+title(<span class="string">'HABLA: L/D vs. KCAS'</span>);
+xlabel(<span class="string">'KCAS'</span>); ylabel(<span class="string">'L/D'</span>);
+hold <span class="string">on</span>
+plot(KCAS_bg,L_bg/D_bg,<span class="string">'Marker'</span>,<span class="string">'o'</span>,<span class="string">'MarkerFaceColor'</span>,<span class="string">'black'</span>,<span class="keyword">...</span>
+    <span class="string">'MarkerEdgeColor'</span>,<span class="string">'black'</span>,<span class="string">'Color'</span>,<span class="string">'white'</span>);
+hold <span class="string">off</span>
+legend(<span class="string">'L/D'</span>,<span class="string">'L_{bg}/D_{bg}'</span>,<span class="string">'Location'</span>,<span class="string">'Best'</span>);
+annotation(<span class="string">'textarrow'</span>,[0.4225 0.4225],[0.23 0.12],<span class="string">'String'</span>,<span class="string">'TAS_{bg}'</span>);
+</pre><img vspace="5" hspace="5" src="preliminary_sizing_01.png" alt=""> <p><b>Plot parasite, induced, and total drag curves</b></p><pre class="codeinput">h2 = figure(2);
+plot(KCAS,Dp,KCAS,Di,KCAS,D);
+title(<span class="string">'HABLA: Parasite, induced, and total drag curves'</span>);
+xlabel(<span class="string">'KCAS'</span>); ylabel(<span class="string">'Drag, lbf'</span>);
+hold <span class="string">on</span>
+plot(KCAS_bg,D_bg,<span class="string">'Marker'</span>,<span class="string">'o'</span>,<span class="string">'MarkerFaceColor'</span>,<span class="string">'black'</span>,<span class="keyword">...</span>
+    <span class="string">'MarkerEdgeColor'</span>,<span class="string">'black'</span>,<span class="string">'Color'</span>,<span class="string">'white'</span>);
+hold <span class="string">off</span>
+legend(<span class="string">'Parasite, D_p'</span>,<span class="string">'Induced, D_i'</span>,<span class="string">'Total, D'</span>,<span class="string">'D_{bg}'</span>,<span class="string">'Location'</span>,<span class="string">'Best'</span>);
+annotation(<span class="string">'textarrow'</span>,[0.4225 0.4225],[0.23 0.12],<span class="string">'String'</span>,<span class="string">'TAS_{bg}'</span>);
+</pre><img vspace="5" hspace="5" src="preliminary_sizing_02.png" alt=""> <p class="footer"><br>
+      Published with MATLAB&reg; 7.12<br></p></div><!--
+##### SOURCE BEGIN #####
+%% Preliminary Sizing for HABLA
+%% Aircraft Parameters
+% The aircraft parameters are declared as follows.
+m_gopro = convmass(.167,'kg','lbm'); %GoPro mass (with housing), 94g without housing
+m_apm = convmass(.021,'kg','lbm'); % ardupilot mass, lbm
+m_glider = (9.6+2.5)*.0625; % glider with battery + servos
+W = m_glider+m_apm+m_gopro; % weight, lbf
+b = 31/12; % merlin span, ft
+S = 175/12^2;  % merlin wing reference area, ft^2;
+A = b^2/S; % wing aspect ratio
+C_D0 = 0.0200; % guess, flaps up parasite drag coefficient
+e = 1.78*(1-.045*A^0.68)-0.64; % airplane efficiency factor, Raymer p347
+%% Conditions
+h = 1000; % altitude, ft
+h_m = convlength(h,'ft','m');
+phi = 0; % bank angle, deg
+
+%% Mission Profile
+wind=convvel(5,'kts','m/s');
+buoy=convvel(1000,'ft/min','m/s');
+h_max=convlength(100000,'ft','m');
+%% Calculate atmospheric parameters based on altitude using |atmoscoesa|:
+% atmoscoesa is basically ICAO data plus data for >60,000ft
+[T, a, P, rho] = atmoscoesa(h_m, 'Warning');
+rho = convdensity(rho,'kg/m^3','slug/ft^3');
+%% Best glide speed:
+TAS_bg = sqrt((2*W) / (rho*S))...
+         *(1./(4*C_D0.^2 + C_D0.*pi*e*A*cos(phi)^2)).^(1/4); % TAS, fps
+KTAS_bg = convvel(TAS_bg,'ft/s','kts')';
+KCAS_bg = correctairspeed(KTAS_bg,a,P,'TAS','CAS')';
+%% Best glide slope:
+LODmax=1/2*sqrt(pi*A*e/C_D0)
+gamma_bg_rad = asin( -sqrt((4.*C_D0')./(pi*e*A*cos(phi)^2 + 4.*C_D0')) );
+gamma_bg = convang(gamma_bg_rad,'rad','deg') % best glide slope, deg
+
+% nmi range gliding from 40,000ft
+range_bg=40000/tand(-gamma_bg)/5280
+
+%% Best glide lift and drag:
+D_bg = -W*sin(gamma_bg_rad);
+L_bg =  W*cos(gamma_bg_rad);
+
+qbar = dpressure([TAS_bg' zeros(size(TAS_bg,2),2)], rho);
+C_D_bg = D_bg./(qbar*S);
+C_L_bg = L_bg./(qbar*S);
+
+%% Verification
+% Plots to make sure my calcs are right:
+TAS = (10:100)'; % true airspeed, fps
+KTAS = convvel(TAS,'ft/s','kts')'; % true airspeed, kts
+KCAS = correctairspeed(KTAS,a,P,'TAS','CAS')'; % corrected airspeed, kts
+qbar = dpressure([TAS zeros(size(TAS,1),2)], rho);
+Dp = qbar*S.*C_D0; % parasite drag
+Di = (2*W^2)/(rho*S*pi*e*A).*(TAS.^-2); % induced drag
+D = Dp + Di;
+alp_bg=C_L_bg/(2*pi)*180/pi;
+% from above, the angle of attack is about 7 degrees. Adding the flight path angle (i.e. best glide angle) from above shows the fuselage pitch (attitude angle theta) to be about 2 degrees.
+L = W;
+%%
+% *Plot L/D versus KCAS*
+h1 = figure(1);
+plot(KCAS,L./D);
+title('HABLA: L/D vs. KCAS');
+xlabel('KCAS'); ylabel('L/D');
+hold on
+plot(KCAS_bg,L_bg/D_bg,'Marker','o','MarkerFaceColor','black',...
+    'MarkerEdgeColor','black','Color','white');
+hold off
+legend('L/D','L_{bg}/D_{bg}','Location','Best');
+annotation('textarrow',[0.4225 0.4225],[0.23 0.12],'String','TAS_{bg}');
+%%
+% *Plot parasite, induced, and total drag curves*
+h2 = figure(2);
+plot(KCAS,Dp,KCAS,Di,KCAS,D); 
+title('HABLA: Parasite, induced, and total drag curves');
+xlabel('KCAS'); ylabel('Drag, lbf'); 
+hold on
+plot(KCAS_bg,D_bg,'Marker','o','MarkerFaceColor','black',...
+    'MarkerEdgeColor','black','Color','white');
+hold off
+legend('Parasite, D_p','Induced, D_i','Total, D','D_{bg}','Location','Best');
+annotation('textarrow',[0.4225 0.4225],[0.23 0.12],'String','TAS_{bg}');
+
+
+##### SOURCE END #####
+--></body></html>
