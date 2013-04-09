@@ -1,0 +1,8 @@
+.home-banner-bg {
+    background-image: url('../img/GL242-coverphoto.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 370px;
+    min-height:150px;
+}
