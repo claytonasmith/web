@@ -43,13 +43,13 @@
   {
     var dest=document.getElementById(destination);
     if (dest)
-    
+
     {
-      
+
 
       if (currentChar>text.length) // If ready to blink cursor
       {
-      
+
         if (blinkCounter<=15) // If blinked less than n times
         {
         // currentChar=currentChar+blinkToggle; //don't know
@@ -57,36 +57,36 @@
         blinkCounter=blinkCounter+1; // counts the blinks
         dest.innerHTML=text.substr(0, currentChar)+textBlinkCursor.substr(0,blinkToggle);
         setTimeout("type()", 750);
-        }
-        else
-        { 
-          dest.innerHTML=text.substr(0, currentChar)+"_";
-          setTimeout("type()", 1000);
-          blinkCounter=1;
+      }
+      else
+      { 
+        dest.innerHTML=text.substr(0, currentChar)+"_";
+        setTimeout("type()", 1000);
+        blinkCounter=1;
           currentChar=1;  // Start at beginning and delay 
         }
-      
 
-      currentChar++;
+
+        currentChar++;
       } 
 
 
       else // If printing another character
       {
-      dest.innerHTML=text.substr(0, currentChar)+"_";
-      currentChar++;
-      setTimeout("type()", delay);
+        dest.innerHTML=text.substr(0, currentChar)+"_";
+        currentChar++;
+        setTimeout("type()", delay);
       }
     }
   }
 
-function startTyping(textParam, textParam2, delayParam, delayParam2, destinationParam)
-{
-  text=textParam;
-  delay=delayParam;
-  currentChar=1;
-  destination=destinationParam;
-  type();
+  function startTyping(textParam, textParam2, delayParam, delayParam2, destinationParam)
+  {
+    text=textParam;
+    delay=delayParam;
+    currentChar=1;
+    destination=destinationParam;
+    type();
 
   // text=textParam2;
   // delay=delayParam2;
@@ -99,8 +99,6 @@ function startTyping(textParam, textParam2, delayParam, delayParam2, destination
 <!-- Clearbox3 CSS & Script include-->
 <style type="text/css">
 /* BeginOAWidget_Instance_2648024: #OAWidget */
-
-
 .container {
  width: 500px;
  height: 100px;
@@ -262,31 +260,37 @@ function startTyping(textParam, textParam2, delayParam, delayParam2, destination
 </head>
 <body>
   <div id="container">
-    <div id="left_column">
+    <div id="headerText">
       <div id="prefix">claytonsmith</div>
       <div id="suffix">.me</div>
-      <div id="bio_text">
-        <font color="#666" size="6" font="Bariol"><div id="textDestination" class=""> This is claytonsmith.me</div></font>
-        <script language="JavaScript">
-        <!--
-        javascript:startTyping(text, textBlinkCursor, delay, delayBlinkCursor, "textDestination");
-    //-->
-    </script>
-    <!-- I'm an aerodynamics engineer by training with a passion for technology, physics, and entrepreneurship.  I just finished an MBA and am always exploring something new. -->
+      <!-- I'm an aerodynamics engineer by training with a passion for technology, physics, and entrepreneurship.  I just finished an MBA and am always exploring something new. -->
 
-    <!-- <div class="item"></div> -->
+      <!-- <div class="item"></div> -->
 
 
-    <div class="item"><a href="resumetagcloud.html" title="Clearbox Info" rel="clearbox[gallery=Gallery,,height=1000,,width=700]"></a></div>
-  </div>
-  <div id="social_icons"> <a rel="clearbox[height=1056,,width=826]" href="images/ClaytonSmithGraphicalResume.pdf"><img src="images/res-32x32.png" width="32" height="32" alt="Clayton Smith graphical resume"></a>
+    </div>
 
-    <a href="./resonde/index.html" title="reSonde"><img src="images/infinity-32x32.png" width="32" height="32" alt="resonde UAV for atmospheric data"></a>
+    <div id="my_icons"> 
 
-    <a href="http://about.me/claytonasmith"><img src="images/aboutdotme-32x32.png" width="32" height="32" alt="about.me/claytonasmith"></a> <a href="https://twitter.com/clayton_a_smith"><img src="images/twitter-32x32.png" width="32" height="32" alt="twitter"></a> <a href="https://plus.google.com/u/0/106762936442749215989/about/p/pub"><img src="images/google+-32x32.png" width="32" height="32" alt="google plus"></a> <a href="http://travel.claytonsmith.me"><img src="images/Trek.png" width="32" height="32" alt="travel.claytonsmith.me"></a> </div>
-  </div> 
+      <a rel="clearbox[height=1056,,width=826]" href="images/ClaytonSmithGraphicalResume.pdf"><img src="images/res-32x32.png" width="32" height="32" alt="Clayton Smith graphical resume"></a>
+      <a href="./resonde/index.html" title="reSonde"><img src="images/infinity-32x32.png" width="32" height="32" alt="resonde UAV for atmospheric data"></a>
+      <a href="http://about.me/claytonasmith"><img src="images/aboutdotme-32x32.png" width="32" height="32" alt="about.me/claytonasmith"></a> 
+      <a href="https://twitter.com/clayton_a_smith"><img src="images/twitter-32x32.png" width="32" height="32" alt="twitter"></a> 
+      <a href="https://plus.google.com/u/0/106762936442749215989/about/p/pub"><img src="images/google+-32x32.png" width="32" height="32" alt="google plus"></a> 
+      <a href="http://travel.claytonsmith.me"><img src="images/Trek.png" width="32" height="32" alt="travel.claytonsmith.me"></a> 
 
-</div>
+      <div id="transbox">
+        <div id="typingText">
+          <font color="#FFFFFF" size="6" font="Bariol">
+            <div id="textDestination" class=""> This is claytonsmith.me</div></font>
+            <script language="JavaScript">javascript:startTyping(text, textBlinkCursor, delay, delayBlinkCursor, "textDestination");
+            </script>
+          </div> 
+        </div>
+      </div>    
+      
+
+    </div>
 
 
 <!--     <div id="htmltagcloud"> <span id="0" class="wrd tagcloud0">active</span> <span id="1" class="wrd tagcloud2">wing</span> <span id="2" class="wrd tagcloud7">matlab</span> <span id="3" class="wrd tagcloud2">airplane</span> <span id="4" class="wrd tagcloud2">analysis</span> <span id="5" class="wrd tagcloud0">areas</span> <span id="6" class="wrd tagcloud0">automated</span> <span id="7" class="wrd tagcloud0">flaps</span> <span id="8" class="wrd tagcloud6">boeing</span> <span id="9" class="wrd tagcloud0">budget</span> <span id="10" class="wrd tagcloud0">catia</span> <span id="11" class="wrd tagcloud0">cfd</span> <span id="12" class="wrd tagcloud0">circuit</span> <span id="13" class="wrd tagcloud0">configurations</span> <span id="14" class="wrd tagcloud0">cost</span> <span id="15" class="wrd tagcloud7">product</span> <span id="16" class="wrd tagcloud7">development</span> <span id="17" class="wrd tagcloud0">engineer</span> <span id="18" class="wrd tagcloud0">environmental</span> <span id="19" class="wrd tagcloud0">separated</span> <span id="20" class="wrd tagcloud2">catia</span> <span id="21" class="wrd tagcloud0">future</span> <span id="22" class="wrd tagcloud2">geometry</span> <span id="23" class="wrd tagcloud4">cfd</span> <span id="24" class="wrd tagcloud0">impact</span> <span id="25" class="wrd tagcloud0">include</span> <span id="26" class="wrd tagcloud0">innovative</span> <span id="27" class="wrd tagcloud0">leadership</span> <span id="28" class="wrd tagcloud0">c++</span> <span id="29" class="wrd tagcloud2">linux</span> <span id="30" class="wrd tagcloud0">matlab</span> <span id="31" class="wrd tagcloud6">methods</span> <span id="32" class="wrd tagcloud2">models</span> <span id="33" class="wrd tagcloud0">optimize</span> <span id="34" class="wrd tagcloud0">potential</span> <span id="35" class="wrd tagcloud10">aerodynamics</span> <span id="36" class="wrd tagcloud0">project</span> <span id="37" class="wrd tagcloud0">quality</span> <span id="38" class="wrd tagcloud2">drag </span> <span id="39" class="wrd tagcloud0">racing</span> <span id="40" class="wrd tagcloud2">simulation</span> <span id="41" class="wrd tagcloud2">system</span> <span id="42" class="wrd tagcloud2">team</span> <span id="43" class="wrd tagcloud2">wind</span> <span id="44" class="wrd tagcloud2">technologies</span> <span id="45" class="wrd tagcloud4">tests</span> <span id="46" class="wrd tagcloud0">travel</span> <span id="47" class="wrd tagcloud2">tunnel</span> <span id="48" class="wrd tagcloud0">validation</span> <span id="49" class="wrd tagcloud2">atmosphere</span>

@@ -23,11 +23,12 @@ body {
 	margin-right: auto;
 	margin-bottom: 0;
 	margin-left: auto;
-	padding-top: 25px;
+	/*padding-top: 25px;*/
 }
-#left_column {
+#headerText {
 	overflow: hidden;
 	float: left;
+	width: 1080px;
 }
 #prefix {
 	color: #666;
@@ -39,13 +40,40 @@ body {
 	float: left;
 	font-size: 80px;
 }
-#bio_text {
-	color: #666;
-	font-size: medium;
-	width: 300px;
-	padding-top: 30px;
-	clear: left;
+#my_icons {
 	float: left;
+	/*width: 1080px;*/
+	padding-left: 15px;
+	/*margin-top: 30px;*/
+	/*border: 0;*/
+	/*margin-left: 150px;*/
+	/*margin-bottom: 60px;*/
+}
+#transbox
+  {
+background-color:rgba(0,0,0,0.5);
+margin-left: 400px;
+margin-top: 200px;
+height: 400px;
+width: 425px;
+border-radius: 10px;
+}
+ /* width:400px;
+  height:180px;
+  margin:30px 50px;
+  background-color:#ffffff;
+  border:1px solid black;
+  opacity:0.6;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+  /*}*/
+#typingText {
+	/*color: #FFFFFF;*/
+	/*font-size: medium;*/
+	/*width: 300px;*/
+	/*padding-top: 150px;*/
+	padding-left: 10px;
+	/*clear: left;*/
+	/*float: left;*/
 }
 #mytags {
 	font-size: small;
@@ -55,13 +83,7 @@ body {
 	float: left;
 	padding-left: 50px;
 }
-#social_icons {
-	float: left;
-	margin-top: 30px;
-	border: 0;
-	margin-left: 150px;
-	margin-bottom: 60px;
-}
+
 #htmltagcloud {
 	/******************************************
  * CUSTOMIZE CLOUD CSS BELOW (optional)
