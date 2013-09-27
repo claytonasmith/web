@@ -50,7 +50,7 @@ body {
 	/*padding-left: 15px;*/
 	/*margin-top: 30px;*/
 	/*border: 0;*/
-	margin-left: 360px;
+	margin-left: 25%;
 	/*margin-bottom: 60px;*/
 	/*position: relative;*/
 }
@@ -308,7 +308,7 @@ body {
 	border: 0px none rgb(255, 255, 255);
 	color: rgb(255, 255, 255);
 	font: normal normal normal 11.818181991577148px/normal Roboto, arial, sans-serif;
-	height: 160px;
+	height: 120px;
 	margin: 0px 52.8125px;
 	outline: rgb(255, 255, 255) none 0px;
 	position: relative;
@@ -428,7 +428,7 @@ body {
 		display: table;
 		float: right;
 		font: normal normal normal 11.818181991577148px/normal Roboto, arial, sans-serif;
-		height: 160px;
+		height: 120px;
 		margin: 0px 20px;
 		outline: rgb(255, 255, 255) none 0px;
 		text-align: center;
@@ -519,7 +519,7 @@ body {
 	color: rgb(255, 255, 255);
 	display: table;
 	font: normal normal normal 11.818181991577148px/normal Roboto, arial, sans-serif;
-	height: 160px;
+	height: 120px;
 	margin: 0px 20px 0px 190px;
 	outline: rgb(255, 255, 255) none 0px;
 	text-decoration: none solid rgb(255, 255, 255);
@@ -532,7 +532,7 @@ body {
 	color: rgb(255, 255, 255);
 	display: table-cell;
 	font: normal normal normal 11.818181991577148px/normal Roboto, arial, sans-serif;
-	height: 160px;
+	height: 120px;
 	outline: rgb(255, 255, 255) none 0px;
 	text-align: left;
 	text-decoration: none solid rgb(255, 255, 255);
