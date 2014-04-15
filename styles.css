@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 html {
-	background: url('images/logo-in-work.png') no-repeat center center fixed;
+	background: url('images/claytonismedium.png') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -9,8 +9,6 @@ html {
 	height: 100%;
 }
 body {
-	/*	background: url(images/background.JPG) fixed no-repeat top center;
-	background-color: #000;*/
 	font-family: Tahoma, Geneva, sans-serif;
 	color: #FFF;
 	height: 100%;
@@ -25,282 +23,30 @@ body {
 	margin-left: auto;
 	/*padding-top: 25px;*/
 }
-#headerText {
-	/*overflow: hidden;*/
-	/*float: left;*/
-	width: 1080px;
-	
-}
-#prefix {
-	color: #666;
-	float: left;
-	font-size: inherit;
-	font-size: 80px;
-	margin-left:80px;
 
-	
-}
-#suffix {
-	color: #CCC;
-	/*float: left;*/
-	font-size: 80px;
-}
 #my_icons {
-	/*float: left;*/
-	/*width: 1080px;*/
-	/*padding-left: 15px;*/
-	/*margin-top: 30px;*/
-	/*border: 0;*/
-	margin-left: 25%;
-	/*margin-bottom: 60px;*/
-	/*position: relative;*/
+	margin-left: 30%;
 }
-#transbox
-{
-	background-color:rgba(0,0,0,0.5);
-	/*margin-left: 000px;*/
-	margin-top: -150px;
-	padding-top: 230px;
-	/*padding-left: 350px;*/
-	/*height: 800px;*/
-
-	width: 50%;
-	border-radius: 10px;
-}
- /* width:400px;
-  height:180px;
-  margin:30px 50px;
-  background-color:#ffffff;
-  border:1px solid black;
-  opacity:0.6;
-  filter:alpha(opacity=60); /* For IE8 and earlier */
-  /*}*/
-  #typingText {
-  	/*color: #FFFFFF;*/
-  	/*font-size:2;*/
-  	  	/*width: 300px;*/
-  	/*padding-top: 150px;*/
-  	padding-left: 15px;
-  	padding-bottom: 25px;
-  	/*clear: left;*/
-  	/*float: left;*/
-  	/*color: rgba();*/
-  }
 
   /*stuff from google plus profile - > BEGIN */
   #gplusrow {
-  	margin-top: 50px
-  }
-  #profilePicDiv {
-
-  	/*width: 1200;*/
-  	/*border: 10px dashed rgb(255, 255, 255);*/
-  	/*color: rgb(255, 255, 255);*/
-  	/*font: normal normal normal 12px/normal Roboto, arial, sans-serif;*/
-  	/*height: 120px;*/
-  	/*left: 20px;*/
-  	/*outline: rgb(255, 255, 255) dashed 10px;*/
-  	/*position: absolute;*/
-  	/*text-align: center;*/
-  	/*text-decoration: none solid rgb(255, 255, 255);*/
-  	/*text-shadow: rgba(0, 0, 0, 0.701961) 0px 1px 0px;*/
-  	/*top: 20px;*/
-  	/*width: 120px;*/
+  	background-color:rgba(0,0,0,0.5);
+  	margin-top: 50px;
+  	margin-left: 100px;
+  	padding-top: 15px;
+  	padding-bottom: 15px;
+	width: 50%;
+	border-radius: 10px;
   }
   #profilePic {
   	border-radius: 50%;
-  	margin-left: 60px;
+  	margin-left: 20px;
   	float: left;
   	border: 2px solid rgb(255, 255, 255);
-
   	color: rgb(255, 255, 255);
-  	/*cursor: pointer;*/
-  	/*display: block;*/
-  	/*font: normal normal normal 12px/normal Roboto, arial, sans-serif;*/
-  	/*height: 120px;*/
-  	/*outline: rgb(255, 255, 255) none 0px;*/
-  	/*text-align: center;*/
-  	/*text-decoration: none solid rgb(255, 255, 255);*/
-  	/*text-shadow: rgba(0, 0, 0, 0.701961) 0px 1px 0px;*/
-  	/*width: 120px;*/
   }
 
   /*stuff from google plus profile - > END */
-
-
-
-  #mytags {
-  	/*font-size: small;*/
-  	/*color: #6B6B6B;*/
-  	/*width: 300px;*/
-  	/*padding-top: 9px;*/
-  	/*float: left;*/
-  	/*padding-left: 50px;*/
-  }
-
-  #htmltagcloud {
-	/******************************************
- * CUSTOMIZE CLOUD CSS BELOW (optional)
- */
- font-size: 60%;
- /* [disabled]height: 200px; */
- font-family: 'lucida grande', 'trebuchet ms', arial, helvetica, sans-serif;
-	/* [disabled]background-color: transparent; */	/******************************************
- * END CUSTOMIZE
- */
- /* [disabled]float: right; */
- width: 60%;
- /* [disabled]padding-top: 150px; */
- padding-right: 20px;
- /* [disabled]padding-left: 300px; */
- bottom: 0;
- position: absolute;
- /* [disabled]height: 300px; */   /* Height of the footer */
- right: 0px;
-}
-#htmltagcloud {
-	line-height:2.4em;
-	word-spacing:normal;
-	letter-spacing:normal;
-	text-transform:none;
-	text-align:justify;
-	text-indent:0
-}
-#htmltagcloud a:link {
-	text-decoration:none
-}
-#htmltagcloud a:visited {
-	text-decoration:none
-}
-#htmltagcloud a:hover {
-	color:white;
-	background-color:#05f
-}
-#htmltagcloud a:active {
-	color:white;
-	background-color:#03d
-}
-.wrd {
-	padding:0;
-	position:relative
-}
-.wrd a {
-	text-decoration:none
-}
-.tagcloud0 {
-	font-size:1.0em;
-	color:#ACC1F3;
-	z-index:10
-}
-.tagcloud0 a {
-	color:#ACC1F3
-}
-.tagcloud1 {
-	font-size:1.4em;
-	color:#ACC1F3;
-	z-index:9
-}
-.tagcloud1 a {
-	color:#ACC1F3
-}
-.tagcloud2 {
-	font-size:1.8em;
-	color:#86A0DC;
-	z-index:8
-}
-.tagcloud2 a {
-	color:#86A0DC
-}
-.tagcloud3 {
-	font-size:2.2em;
-	color:#86A0DC;
-	z-index:7
-}
-.tagcloud3 a {
-	color:#86A0DC
-}
-.tagcloud4 {
-	font-size:2.6em;
-	color:#607EC5;
-	z-index:6
-}
-.tagcloud4 a {
-	color:#607EC5
-}
-.tagcloud5 {
-	font-size:3.0em;
-	color:#607EC5;
-	z-index:5
-}
-.tagcloud5 a {
-	color:#607EC5
-}
-.tagcloud6 {
-	font-size:3.3em;
-	color:#4C6DB9;
-	z-index:4
-}
-.tagcloud6 a {
-	color:#4C6DB9
-}
-.tagcloud7 {
-	font-size:3.6em;
-	color:#395CAE;
-	z-index:3
-}
-.tagcloud7 a {
-	color:#395CAE
-}
-.tagcloud8 {
-	font-size:3.9em;
-	color:#264CA2;
-	z-index:2
-}
-.tagcloud8 a {
-	color:#264CA2
-}
-.tagcloud9 {
-	font-size:4.2em;
-	color:#133B97;
-	z-index:1
-}
-.tagcloud9 a {
-	color:#133B97
-}
-.tagcloud10 {
-	font-size:4.5em;
-	color:#002A8B;
-	z-index:0
-}
-.tagcloud10 a {
-	color:#002A8B
-}
-.freq {
-	font-size:10pt !important;
-	color:#bbb
-}
-#credit {
-	text-align:center;
-	color:#333;
-	margin-bottom:0.6em;
-	font:0.7em 'lucida grande', trebuchet, 'trebuchet ms', verdana, arial, helvetica, sans-serif
-}
-#credit a:link {
-	color:#777;
-	text-decoration:none
-}
-#credit a:visited {
-	color:#777;
-	text-decoration:none
-}
-#credit a:hover {
-	color:white;
-	background-color:#05f
-}
-#credit a:active {
-	text-decoration:underline
-}
-
 
 
 /*second round plus*/
@@ -521,7 +267,7 @@ body {
 	display: table;
 	font: normal normal normal 11.818181991577148px/normal Roboto, arial, sans-serif;
 	height: 120px;
-	margin: 0px 20px 0px 190px;
+	margin: 0px 20px 0px 25px;
 	outline: rgb(255, 255, 255) none 0px;
 	text-decoration: none solid rgb(255, 255, 255);
 	text-shadow: rgba(0, 0, 0, 0.701961) 0px 0.9090908765792847px 0px;
@@ -686,7 +432,7 @@ body {
 
 #DIV_26 {
 	background: rgb(230, 230, 230) none repeat scroll 0% 0% / auto padding-box border-box;
-	border: ;
+	border: 0px none rgb(255, 255, 255);
 	color: rgb(51, 102, 204);
 	font: normal normal normal 11.818181991577148px/15px Roboto, arial, sans-serif;
 	height: 14px;
