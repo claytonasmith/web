@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>clayton.is</title>
-  <link href="styles.css" rel="stylesheet" type="text/css">
-  <LINK REL="SHORTCUT ICON" HREF="images/logo-in-work-32x32.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="css/jquery-ui-1.8.11.custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link rel="airplane logo" href="images/logo-in-work-32x32.png">
 
     <style type="text/css"></style>
 
@@ -303,6 +305,8 @@ function type()
 </script>
 <!-- Clearbox3 script end-->
 
+
+
 </head>
 <body>
   <div id="container">
@@ -350,7 +354,10 @@ function type()
     </div>
   </div>
 
-
+<div class="nav-arrow" id="scroll-btn">
+      <a href="#graphical_resume" scroll-on-click="">
+      <img src="images/more-arrow-lt.png" alt="more arrow"></a>
+    </div>
   <div id="my_icons"> 
 
     <a rel="clearbox[height=1056,,width=826]" href="Clayton Smith - Graphical Resume.htm"><img src="images/res-32x32.png" width="32" height="32" alt="Clayton Smith graphical resume"></a>
@@ -369,14 +376,45 @@ function type()
   </div> <!-- my_icons -->
 
 </div> <!-- gplusrow of disaster-->
+
+
+
+        
+          <div id="graphical_resume">               
+           <!-- <h2 id="graphical_resume"> -->
+             <object width="100%" height="100%" id="SVGViewer1" data="Clayton Smith - Graphical Resume_files/svg_1.svg" type="image/svg+xml" VIEWASTEXT>
+              <div></div> id=RasterDiv>
+            <!-- </h2> -->
+
+          </div>
+</object>
+            </div>
+        </div>
+
+
 </div> <!-- container -->
 
 
 <!--     <div id="htmltagcloud"> <span id="0" class="wrd tagcloud0">active</span> <span id="1" class="wrd tagcloud2">wing</span> <span id="2" class="wrd tagcloud7">matlab</span> <span id="3" class="wrd tagcloud2">airplane</span> <span id="4" class="wrd tagcloud2">analysis</span> <span id="5" class="wrd tagcloud0">areas</span> <span id="6" class="wrd tagcloud0">automated</span> <span id="7" class="wrd tagcloud0">flaps</span> <span id="8" class="wrd tagcloud6">boeing</span> <span id="9" class="wrd tagcloud0">budget</span> <span id="10" class="wrd tagcloud0">catia</span> <span id="11" class="wrd tagcloud0">cfd</span> <span id="12" class="wrd tagcloud0">circuit</span> <span id="13" class="wrd tagcloud0">configurations</span> <span id="14" class="wrd tagcloud0">cost</span> <span id="15" class="wrd tagcloud7">product</span> <span id="16" class="wrd tagcloud7">development</span> <span id="17" class="wrd tagcloud0">engineer</span> <span id="18" class="wrd tagcloud0">environmental</span> <span id="19" class="wrd tagcloud0">separated</span> <span id="20" class="wrd tagcloud2">catia</span> <span id="21" class="wrd tagcloud0">future</span> <span id="22" class="wrd tagcloud2">geometry</span> <span id="23" class="wrd tagcloud4">cfd</span> <span id="24" class="wrd tagcloud0">impact</span> <span id="25" class="wrd tagcloud0">include</span> <span id="26" class="wrd tagcloud0">innovative</span> <span id="27" class="wrd tagcloud0">leadership</span> <span id="28" class="wrd tagcloud0">c++</span> <span id="29" class="wrd tagcloud2">linux</span> <span id="30" class="wrd tagcloud0">matlab</span> <span id="31" class="wrd tagcloud6">methods</span> <span id="32" class="wrd tagcloud2">models</span> <span id="33" class="wrd tagcloud0">optimize</span> <span id="34" class="wrd tagcloud0">potential</span> <span id="35" class="wrd tagcloud10">aerodynamics</span> <span id="36" class="wrd tagcloud0">project</span> <span id="37" class="wrd tagcloud0">quality</span> <span id="38" class="wrd tagcloud2">drag </span> <span id="39" class="wrd tagcloud0">racing</span> <span id="40" class="wrd tagcloud2">simulation</span> <span id="41" class="wrd tagcloud2">system</span> <span id="42" class="wrd tagcloud2">team</span> <span id="43" class="wrd tagcloud2">wind</span> <span id="44" class="wrd tagcloud2">technologies</span> <span id="45" class="wrd tagcloud4">tests</span> <span id="46" class="wrd tagcloud0">travel</span> <span id="47" class="wrd tagcloud2">tunnel</span> <span id="48" class="wrd tagcloud0">validation</span> <span id="49" class="wrd tagcloud2">atmosphere</span>
 </div> -->
+
+<script src="js/zoom.js"></script>
+<script>
+document.querySelector( '#gplusrow' ).addEventListener( 'click', function( event ) {
+  event.preventDefault();
+  zoom.to({ element: event.target });
+} );
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.js"></script>
+<script src="js/jquery.anchorscroll.js"></script>
+<script src="js/global.js"></script>
 <!-- <script src="transitions.js"></script> -->
-<script src="collapse.js"></script>
+<script src="js/collapse.js"></script>
 
 </body>
 </html>
