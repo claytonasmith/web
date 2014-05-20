@@ -185,6 +185,10 @@ function makeAdvancedFindCheckboxes(div)
 				tmpPropName = objNodes[0].text;
 			else
 				tmpPropName = objNodes[0].textContent;
+
+			if(null == tmpPropName)
+				tmpPropName = "";
+
 			var escapedPropName = parent.EscapeString(tmpPropName);
 			if( true == boolFirstPass )
 			{

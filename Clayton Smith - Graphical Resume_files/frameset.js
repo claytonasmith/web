@@ -2,10 +2,30 @@
 var MSIE = false;
 var ver = 0;
 var indexOfMSIE = navigator.userAgent.indexOf("MSIE"); 
+var indexOfTrident = navigator.userAgent.indexOf("Trident");
 if(indexOfMSIE != -1)
 {
 	MSIE = true;
 	ver = parseFloat(navigator.userAgent.substring(indexOfMSIE + 5, navigator.userAgent.indexOf(";", indexOfMSIE)));
+}
+// O15 :3405219: Internet Explorer, from IE11 onwards will no longer supports the user Agent MSIE.
+// Alternative is to query the UA string for "Trident".
+// More information at : http://msdn.microsoft.com/en-us/library/ms537503(v=vs.85).aspx
+// Trident userAgent mapping:
+// Trident/7.0 IE11
+// Trident/6.0 Internet Explorer 10
+// Trident/5.0 Internet Explorer 9
+// Trident/4.0 Internet Explorer 8
+else if(indexOfTrident != -1)
+{
+	MSIE = true;
+	// UserAgent Trident can end with a ';' or a ')'
+	ver = parseFloat(navigator.userAgent.substring(indexOfTrident + 8, navigator.userAgent.indexOf(";", indexOfTrident)));
+	if(ver == NaN)
+	{
+		ver = parseFloat(navigator.userAgent.substring(indexOfTrident + 8, navigator.userAgent.indexOf(")", indexOfTrident)));
+	}
+	ver += 4; // version of trident is 4 less to IE version number
 }
 
 var slInstalled = false;

@@ -23,11 +23,12 @@ body {
 
 #my_icons {
 	width: 300px;
-	margin-left: 18%;
+	margin-left: 25%;
 }
 #scroll-btn {
 	/*width: 110px;*/
 	margin-top: 20px;
+	margin-left: 50%;
 	/*float: left;*/
 }
   /*stuff from google plus profile - > BEGIN */
@@ -37,7 +38,7 @@ body {
   	margin-left: 5%;
   	padding-top: 15px;
   	padding-bottom: 15px;
-	width: 100%;
+	width: 70%;
 	border-radius: 10px;
   }
   #profilePic {
@@ -51,7 +52,7 @@ body {
   /*stuff from google plus profile - > END */
 
 #graphical_resume {
-	margin-top: 100%;
+	margin-top: 50%;
 }
 
 /*second round plus*/

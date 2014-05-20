@@ -11,379 +11,370 @@
 				<NameUniv>Connector</NameUniv>
 				<Visible>1</Visible>
 			</Layer>
+			<Layer IX="1">
+				<Name>Flowchart</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
 			<Shapes>
 				<Shape ID="215" UniqueID="{EB4F34C1-FB02-45F9-9D40-7E812C205F82}" Name="Sheet.215" NameU="Sheet.215">
 					<XForm>
-						<PinX Unit="IN_F">4.726562500000000</PinX>
-						<PinY Unit="IN_F">7.562500000000000</PinY>
+						<PinX Unit="IN_F">4.725591715976331</PinX>
+						<PinY Unit="IN_F">9.312500000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="2" UniqueID="{48CB14A7-EC91-480E-BC63-2C0CB263F24A}" Name="Sheet.2" NameU="Sheet.2">
 					<XForm>
-						<PinX Unit="IN_F">3.937500000000000</PinX>
-						<PinY Unit="IN_F">9.875000000000000</PinY>
-					</XForm>
-				</Shape>
-				<Shape ID="87" UniqueID="{28CB2DC2-D0C4-46F2-A82E-25A94F6B2D46}" Name="Sheet.87" NameU="Sheet.87">
-					<Text>CLAYTON</Text>
-					<XForm>
-						<PinX Unit="IN_F">2.818804824561403</PinX>
-						<PinY Unit="IN_F">10.111111111111111</PinY>
-					</XForm>
-				</Shape>
-				<Shape ID="88" UniqueID="{4DF40437-30CE-4BE7-949D-874C65DEDB1C}" Name="Sheet.88" NameU="Sheet.88">
-					<Text>SMITH</Text>
-					<XForm>
-						<PinX Unit="IN_F">4.671875000000000</PinX>
-						<PinY Unit="IN_F">9.503472222222223</PinY>
+						<PinX Unit="IN_F">4.186529215976331</PinX>
+						<PinY Unit="IN_F">6.312500000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="90" UniqueID="{7A38EA5D-78D8-4DB1-BDDC-E42935207365}" Name="Sheet.90" NameU="Sheet.90">
-					<Text>hello@claytonasmith.com</Text>
+					<Text>mail: hello@clayton.is</Text>
 					<XForm>
-						<PinX Unit="IN_F">1.749451754385965</PinX>
-						<PinY Unit="IN_F">9.638888888888889</PinY>
+						<PinX Unit="IN_F">2.670904215976331</PinX>
+						<PinY Unit="IN_F">8.029513888888889</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="1" UniqueID="{ABB3A946-1745-4D8F-8B13-775E62E0E893}" Name="Sheet.1" NameU="Sheet.1">
 					<XForm>
-						<PinX Unit="IN_F">4.437500000000000</PinX>
-						<PinY Unit="IN_F">4.534846230158736</PinY>
+						<PinX Unit="IN_F">4.436529215976331</PinX>
+						<PinY Unit="IN_F">6.284846230158736</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="7" UniqueID="{4A06B69C-01DA-4AAF-8D43-5879A7B50B76}" Name="Sheet.7" NameU="Sheet.7">
 					<XForm>
-						<PinX Unit="IN_F">4.437500000000000</PinX>
-						<PinY Unit="IN_F">1.595833333333335</PinY>
+						<PinX Unit="IN_F">4.436529215976331</PinX>
+						<PinY Unit="IN_F">3.345833333333333</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="175" UniqueID="{D175C6D3-402E-4D3E-BCB3-6EBFCF683B8F}" Name="Sheet.175" NameU="Sheet.175">
 					<XForm>
-						<PinX Unit="IN_F">4.332589285714287</PinX>
-						<PinY Unit="IN_F">5.655381944444451</PinY>
+						<PinX Unit="IN_F">4.331618501690618</PinX>
+						<PinY Unit="IN_F">7.405381944444451</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="174" UniqueID="{C829A1A9-8F82-4070-A999-4119F28C8C70}" Name="Sheet.174" NameU="Sheet.174">
 					<XForm>
-						<PinX Unit="IN_F">4.485491071428573</PinX>
-						<PinY Unit="IN_F">2.717881944444448</PinY>
+						<PinX Unit="IN_F">4.484520287404904</PinX>
+						<PinY Unit="IN_F">4.467881944444448</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="4" UniqueID="{3E65000C-F26E-4180-939D-61FA6B48E348}" Name="Sheet.4" NameU="Sheet.4">
 					<Text>EXPERIENCE</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.125000000000000</PinX>
-						<PinY Unit="IN_F">7.718750000000000</PinY>
+						<PinX Unit="IN_F">6.124029215976331</PinX>
+						<PinY Unit="IN_F">9.468750000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="153" UniqueID="{91768413-FFF0-42B0-AC9E-AFC8A90FA5E1}" Name="Sheet.153" NameU="Sheet.153">
 					<Text>2012</Text>
 					<XForm>
-						<PinX Unit="IN_F">4.062500000000000</PinX>
-						<PinY Unit="IN_F">5.655381944444451</PinY>
+						<PinX Unit="IN_F">4.061529215976331</PinX>
+						<PinY Unit="IN_F">7.405381944444451</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="134" UniqueID="{8D0655A0-DA0C-4A2A-ABFE-9F9022333EAA}" Name="Sheet.134" NameU="Sheet.134">
 					<Text>2006</Text>
 					<XForm>
-						<PinX Unit="IN_F">3.875000000000000</PinX>
-						<PinY Unit="IN_F">2.703993055555559</PinY>
+						<PinX Unit="IN_F">3.874029215976331</PinX>
+						<PinY Unit="IN_F">4.453993055555559</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="142" UniqueID="{A246261C-9E47-4F73-BC9C-83467B898EE0}" Name="Sheet.142" NameU="Sheet.142">
 					<Text>2005</Text>
 					<XForm>
-						<PinX Unit="IN_F">3.875000000000000</PinX>
-						<PinY Unit="IN_F">1.906250000000000</PinY>
+						<PinX Unit="IN_F">3.874029215976331</PinX>
+						<PinY Unit="IN_F">3.656250000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="152" UniqueID="{0899A104-C55D-4CF0-B0F6-294D45AA56D6}" Name="Sheet.152" NameU="Sheet.152">
 					<XForm>
-						<PinX Unit="IN_F">4.437500000000000</PinX>
-						<PinY Unit="IN_F">5.655381944444451</PinY>
+						<PinX Unit="IN_F">4.436529215976331</PinX>
+						<PinY Unit="IN_F">7.405381944444451</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="161" UniqueID="{03CEC3F8-45B9-4B95-B389-B381F927D616}" Name="Sheet.161" NameU="Sheet.161">
 					<XForm>
-						<PinX Unit="IN_F">4.437500000000000</PinX>
-						<PinY Unit="IN_F">2.717881944444448</PinY>
+						<PinX Unit="IN_F">4.436529215976331</PinX>
+						<PinY Unit="IN_F">4.467881944444448</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="166" UniqueID="{0CE6D931-BB5B-4933-A507-BA475DD0AA66}" Name="Sheet.166" NameU="Sheet.166">
 					<XForm>
-						<PinX Unit="IN_F">4.443536721593663</PinX>
-						<PinY Unit="IN_F">1.906316440223077</PinY>
+						<PinX Unit="IN_F">4.442565937569994</PinX>
+						<PinY Unit="IN_F">3.656316440223077</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="167" UniqueID="{B90E8049-8C6F-4498-887F-934C647E778A}" Name="Sheet.167" NameU="Sheet.167">
 					<XForm>
-						<PinX Unit="IN_F">4.584804097949228</PinX>
-						<PinY Unit="IN_F">2.717881944444448</PinY>
+						<PinX Unit="IN_F">4.583833313925560</PinX>
+						<PinY Unit="IN_F">4.467881944444448</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="173" UniqueID="{597D3613-59B0-4D9A-A196-3BD5EC2341E2}" Name="Sheet.173" NameU="Sheet.173">
 					<XForm>
-						<PinX Unit="IN_F">4.593750000000000</PinX>
-						<PinY Unit="IN_F">4.957899305555557</PinY>
+						<PinX Unit="IN_F">4.592779215976331</PinX>
+						<PinY Unit="IN_F">6.707899305555557</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="156" UniqueID="{DA0070D1-7456-4ED3-B487-D096A3D951BD}" Name="Sheet.156" NameU="Sheet.156">
 					<XForm>
-						<PinX Unit="IN_F">4.687500000000000</PinX>
-						<PinY Unit="IN_F">1.904513888888890</PinY>
+						<PinX Unit="IN_F">4.686529215976331</PinX>
+						<PinY Unit="IN_F">3.654513888888890</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="9" UniqueID="{923BDD5C-8E4E-408B-AF7E-FA3797451C59}" Name="Sheet.9" NameU="Sheet.9">
-					<Text>I’m a UW MBA with an Aerospace Engineering background and a passion for technology and physics.  For the last 7 years,  I’ve called aerodynamics my home.  I’m always looking for ways to leverage my physics background with business development and an entrepreneurial mindset.</Text>
+					<Text>I’m a UW MBA with an Aerospace Engineering background and a passion for technology and physics.  I’ve spent the first part of my career at Boeing, working in Aerodynamics.  I recently moved to San Diego to work on hypersonics at General Atomics.  I’m always looking for ways to leverage my physics background with business development and an entrepreneurial mindset.</Text>
 					<XForm>
-						<PinX Unit="IN_F">4.125000000000000</PinX>
-						<PinY Unit="IN_F">8.421875000000000</PinY>
+						<PinX Unit="IN_F">4.124029215976331</PinX>
+						<PinY Unit="IN_F">10.281250000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="102" UniqueID="{6427CD1E-1B82-40B4-AB4F-83BAFDA54AC4}" Name="Sheet.102" NameU="Sheet.102">
 					<Text>HTML/CSS</Text>
 					<XForm>
-						<PinX Unit="IN_F">2.428125000000000</PinX>
-						<PinY Unit="IN_F">4.376679104477609</PinY>
+						<PinX Unit="IN_F">2.427154215976331</PinX>
+						<PinY Unit="IN_F">6.126679104477609</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="103" UniqueID="{643B2C40-D29E-4A17-BC63-2829EE27EA1B}" Name="Sheet.103" NameU="Sheet.103">
 					<Text>MATLAB</Text>
 					<XForm>
-						<PinX Unit="IN_F">2.490625000000000</PinX>
-						<PinY Unit="IN_F">5.323554104477609</PinY>
+						<PinX Unit="IN_F">2.489654215976331</PinX>
+						<PinY Unit="IN_F">7.073554104477609</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="13" UniqueID="{1A6B92A3-C8D1-4EC5-AE40-917B31B0B62E}" Name="Sheet.13" NameU="Sheet.13">
 					<XForm>
-						<PinX Unit="IN_F">0.652777777777777</PinX>
-						<PinY Unit="IN_F">3.517158996683253</PinY>
+						<PinX Unit="IN_F">0.651806993754108</PinX>
+						<PinY Unit="IN_F">5.267158996683254</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="130" UniqueID="{2A827EEF-15DE-4437-8E8E-5FA8012E57BD}" Name="Sheet.130" NameU="Sheet.130">
 					<Text>5 Yr</Text>
 					<XForm>
-						<PinX Unit="IN_F">0.586349502487563</PinX>
-						<PinY Unit="IN_F">3.454938847429522</PinY>
+						<PinX Unit="IN_F">0.585378718463894</PinX>
+						<PinY Unit="IN_F">5.204938847429522</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="129" UniqueID="{44AB2F66-A477-48E5-897B-17CB933F2477}" Name="Sheet.129" NameU="Sheet.129">
 					<Text>1 Yr</Text>
 					<XForm>
-						<PinX Unit="IN_F">0.586349502487563</PinX>
-						<PinY Unit="IN_F">3.380695480928692</PinY>
+						<PinX Unit="IN_F">0.585378718463894</PinX>
+						<PinY Unit="IN_F">5.130695480928693</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="12" UniqueID="{8BAE94A0-EB58-457A-8D00-FC4810702D08}" Name="Sheet.12" NameU="Sheet.12">
 					<Text>Years Exp.</Text>
 					<XForm>
-						<PinX Unit="IN_F">0.625725538971807</PinX>
-						<PinY Unit="IN_F">3.754016376451080</PinY>
+						<PinX Unit="IN_F">0.624754754948138</PinX>
+						<PinY Unit="IN_F">5.504016376451080</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="8" UniqueID="{7270032D-411B-437D-9D6B-13E1899DCD24}" Name="Sheet.8" NameU="Sheet.8">
 					<Text>2002</Text>
 					<XForm>
-						<PinX Unit="IN_F">3.875000000000000</PinX>
-						<PinY Unit="IN_F">0.578993055555555</PinY>
+						<PinX Unit="IN_F">3.874029215976331</PinX>
+						<PinY Unit="IN_F">2.328993055555555</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="118" UniqueID="{93D8BDDF-F7D7-4BBE-BC9E-202B933F6925}" Name="Sheet.118" NameU="Sheet.118">
 					<Text>C++</Text>
 					<XForm>
-						<PinX Unit="IN_F">1.875000000000000</PinX>
-						<PinY Unit="IN_F">4.251679104477609</PinY>
+						<PinX Unit="IN_F">1.874029215976331</PinX>
+						<PinY Unit="IN_F">6.001679104477609</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="109" UniqueID="{A0DAEBB4-6795-42DC-8902-E29FC1387D2C}" Name="Sheet.109" NameU="Sheet.109">
 					<XForm>
-						<PinX Unit="IN_F">1.399739583333335</PinX>
-						<PinY Unit="IN_F">4.564427120350626</PinY>
+						<PinX Unit="IN_F">1.398768799309666</PinX>
+						<PinY Unit="IN_F">6.314427120350626</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="110" UniqueID="{C7AEF4C1-4737-4F19-AE0F-D32C9BBCE8EB}" Name="Sheet.110" NameU="Sheet.110">
 					<XForm>
-						<PinX Unit="IN_F">2.257905505952381</PinX>
-						<PinY Unit="IN_F">3.911401326699832</PinY>
+						<PinX Unit="IN_F">2.256934721928713</PinX>
+						<PinY Unit="IN_F">5.661401326699832</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="112" UniqueID="{EA8DDF0F-B7B2-48A6-A25D-A666E6366ACA}" Name="Sheet.112" NameU="Sheet.112">
 					<Text>Love it</Text>
 					<XForm>
-						<PinX Unit="IN_F">3.098307291666667</PinX>
-						<PinY Unit="IN_F">4.036401326699833</PinY>
+						<PinX Unit="IN_F">3.097336507642998</PinX>
+						<PinY Unit="IN_F">5.786401326699833</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="113" UniqueID="{F06FCE58-EA81-4731-991C-D83D9D2D5FBA}" Name="Sheet.113" NameU="Sheet.113">
 					<Text>Ehh</Text>
 					<XForm>
-						<PinX Unit="IN_F">1.215277777777778</PinX>
-						<PinY Unit="IN_F">3.765567993366499</PinY>
+						<PinX Unit="IN_F">1.214306993754109</PinX>
+						<PinY Unit="IN_F">5.515567993366499</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="114" UniqueID="{B59332D1-E278-4362-912F-0F173C75F9A5}" Name="Sheet.114" NameU="Sheet.114">
 					<Text>Great at it</Text>
 					<XForm>
-						<PinX Unit="IN_F">1.371961805555557</PinX>
-						<PinY Unit="IN_F">5.536401326699833</PinY>
+						<PinX Unit="IN_F">1.370991021531888</PinX>
+						<PinY Unit="IN_F">7.286401326699833</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="131" UniqueID="{0AB40B37-F5BB-4F67-8850-DCBD44606B4A}" Name="Sheet.131" NameU="Sheet.131">
 					<Text>PROGRAMMING</Text>
 					<XForm>
-						<PinX Unit="IN_F">0.952690972222221</PinX>
-						<PinY Unit="IN_F">4.689179104477609</PinY>
+						<PinX Unit="IN_F">0.951720188198552</PinX>
+						<PinY Unit="IN_F">6.439179104477609</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="117" UniqueID="{5DBBF4E9-C61D-4854-AD08-6AEA9CDB4B09}" Name="Sheet.117" NameU="Sheet.117">
 					<Text>CATIA</Text>
 					<XForm>
-						<PinX Unit="IN_F">2.109375000000000</PinX>
-						<PinY Unit="IN_F">4.767304104477609</PinY>
+						<PinX Unit="IN_F">2.108404215976331</PinX>
+						<PinY Unit="IN_F">6.517304104477609</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="15" UniqueID="{F619B2D6-1FDF-45B5-8691-A8382A4FF6C0}" Name="Sheet.15" NameU="Sheet.15">
 					<XForm>
-						<PinX Unit="IN_F">6.773437500000000</PinX>
-						<PinY Unit="IN_F">0.705034722222222</PinY>
+						<PinX Unit="IN_F">6.772466715976331</PinX>
+						<PinY Unit="IN_F">2.455034722222222</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="144" UniqueID="{F52FB6CD-45E5-47F0-9286-DC2C84E6A37A}" Name="Sheet.144" NameU="Sheet.144">
 					<Text>/ Reliability, Maintainability, &amp; Test</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.882812500000000</PinX>
-						<PinY Unit="IN_F">0.778892299775001</PinY>
+						<PinX Unit="IN_F">6.881841715976331</PinX>
+						<PinY Unit="IN_F">2.528892299775001</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="143" UniqueID="{23E27450-6D9B-40E1-B024-5B5B7FF1E515}" Name="Sheet.143" NameU="Sheet.143">
 					<Text>The Boeing Company</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.586662046370969</PinX>
-						<PinY Unit="IN_F">0.959767999904256</PinY>
+						<PinX Unit="IN_F">6.585691262347300</PinX>
+						<PinY Unit="IN_F">2.709767999904256</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="145" UniqueID="{247F74AC-1AF1-4E59-A01E-0A6BD0A5D461}" Name="Sheet.145" NameU="Sheet.145">
 					<Text>Enabled “digital maintainability” for validating space &amp; accessibility using CATIA &amp; DELMIA to eliminate mockups.</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.692178049395160</PinX>
-						<PinY Unit="IN_F">0.423505044521039</PinY>
+						<PinX Unit="IN_F">6.691207265371491</PinX>
+						<PinY Unit="IN_F">2.173505044521039</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="6" UniqueID="{DCCAC0FC-16F5-4143-BF28-E0970499DD06}" Name="Sheet.6" NameU="Sheet.6">
 					<XForm>
-						<PinX Unit="IN_F">4.649553571428572</PinX>
-						<PinY Unit="IN_F">3.808159722222227</PinY>
+						<PinX Unit="IN_F">4.648582787404903</PinX>
+						<PinY Unit="IN_F">5.558159722222227</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="91" UniqueID="{CF8DD15C-0D06-4E58-932D-DF5FE2E68742}" Name="Sheet.91" NameU="Sheet.91">
 					<Text>2010</Text>
 					<XForm>
-						<PinX Unit="IN_F">3.875000000000000</PinX>
-						<PinY Unit="IN_F">3.794270833333338</PinY>
+						<PinX Unit="IN_F">3.874029215976331</PinX>
+						<PinY Unit="IN_F">5.544270833333338</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="94" UniqueID="{2E8A62AC-9DD9-4462-BB5D-8ED1196838CE}" Name="Sheet.94" NameU="Sheet.94">
 					<XForm>
-						<PinX Unit="IN_F">4.781250000000000</PinX>
-						<PinY Unit="IN_F">3.818402777777779</PinY>
+						<PinX Unit="IN_F">4.780279215976331</PinX>
+						<PinY Unit="IN_F">5.568402777777779</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="14" UniqueID="{44D41D70-80E6-4EDB-B133-C54E7B8E7B36}" Name="Sheet.14" NameU="Sheet.14">
 					<XForm>
-						<PinX Unit="IN_F">6.593750000000000</PinX>
-						<PinY Unit="IN_F">3.600694444444445</PinY>
+						<PinX Unit="IN_F">6.592779215976331</PinX>
+						<PinY Unit="IN_F">5.350694444444445</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="162" UniqueID="{1178D5C1-D775-4B68-8F79-C0EB04A7EE4A}" Name="Sheet.162" NameU="Sheet.162">
 					<Text>/ Production System Development</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.515625000000000</PinX>
-						<PinY Unit="IN_F">3.638888888888890</PinY>
+						<PinX Unit="IN_F">6.514654215976331</PinX>
+						<PinY Unit="IN_F">5.388888888888888</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="165" UniqueID="{9050CA93-E114-445F-97EE-0A04A60C153C}" Name="Sheet.165" NameU="Sheet.165">
 					<Text>Assignment:  bring analytical methods to Boeing’s production system design process.</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.593750000000000</PinX>
-						<PinY Unit="IN_F">3.388888888888890</PinY>
+						<PinX Unit="IN_F">6.592779215976331</PinX>
+						<PinY Unit="IN_F">5.138888888888888</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="176" UniqueID="{C849E258-90FA-471D-B87A-6EE7494FFC2B}" Name="Sheet.176" NameU="Sheet.176">
 					<Text>Leadership Development Assignment</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.562500000000000</PinX>
-						<PinY Unit="IN_F">3.812500000000001</PinY>
+						<PinX Unit="IN_F">6.561529215976331</PinX>
+						<PinY Unit="IN_F">5.562500000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="172" UniqueID="{2E43E669-38BF-40E1-AD47-4E06DD81B63E}" Name="Sheet.172" NameU="Sheet.172">
 					<XForm>
-						<PinX Unit="IN_F">4.436205621301777</PinX>
-						<PinY Unit="IN_F">4.706597222222222</PinY>
+						<PinX Unit="IN_F">4.435234837278109</PinX>
+						<PinY Unit="IN_F">6.456597222222222</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="139" UniqueID="{FD03F34F-FC21-46FE-85EC-1EB902571F6A}" Name="Sheet.139" NameU="Sheet.139">
 					<Text>2011</Text>
 					<XForm>
-						<PinX Unit="IN_F">3.872596153846155</PinX>
-						<PinY Unit="IN_F">4.763888888888890</PinY>
+						<PinX Unit="IN_F">3.871625369822486</PinX>
+						<PinY Unit="IN_F">6.513888888888890</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="164" UniqueID="{5CA23D76-3C42-4DE5-8BE6-F486B8E443BA}" Name="Sheet.164" NameU="Sheet.164">
 					<XForm>
-						<PinX Unit="IN_F">4.548499577345732</PinX>
-						<PinY Unit="IN_F">4.628472222222221</PinY>
+						<PinX Unit="IN_F">4.547528793322063</PinX>
+						<PinY Unit="IN_F">6.378472222222221</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="154" UniqueID="{89B82B6C-AD78-4CE0-9E0D-BA5A73FCEDDF}" Name="Sheet.154" NameU="Sheet.154">
 					<XForm>
-						<PinX Unit="IN_F">4.581176035502960</PinX>
-						<PinY Unit="IN_F">4.628472222222222</PinY>
+						<PinX Unit="IN_F">4.580205251479291</PinX>
+						<PinY Unit="IN_F">6.378472222222222</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="133" UniqueID="{67EB6D2B-931E-45C4-9908-2998C53CE046}" Name="Sheet.133" NameU="Sheet.133">
 					<XForm>
-						<PinX Unit="IN_F">6.797845784023670</PinX>
-						<PinY Unit="IN_F">4.364583333333334</PinY>
+						<PinX Unit="IN_F">6.796875000000001</PinX>
+						<PinY Unit="IN_F">6.114583333333334</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="135" UniqueID="{1737E31E-20E1-4A65-A85C-40E375DF4840}" Name="Sheet.135" NameU="Sheet.135">
 					<Text>The Boeing Company</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.359467455621303</PinX>
-						<PinY Unit="IN_F">4.621527777777779</PinY>
+						<PinX Unit="IN_F">6.358496671597634</PinX>
+						<PinY Unit="IN_F">6.371527777777779</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="137" UniqueID="{3FA09556-3449-417A-BC16-D307751BDAFA}" Name="Sheet.137" NameU="Sheet.137">
 					<Text>/ Lead Engineer: Aerodynamics</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.843195266272189</PinX>
-						<PinY Unit="IN_F">4.453125000000000</PinY>
+						<PinX Unit="IN_F">6.842224482248520</PinX>
+						<PinY Unit="IN_F">6.203125000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="138" UniqueID="{57B71F9A-987A-45F9-8138-8EEB74A8F183}" Name="Sheet.138" NameU="Sheet.138">
 					<Text>Responsible for aerodynamics engineering in a production environment.</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.480399408284025</PinX>
-						<PinY Unit="IN_F">4.173611111111113</PinY>
+						<PinX Unit="IN_F">6.479428624260356</PinX>
+						<PinY Unit="IN_F">5.923611111111113</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="178" UniqueID="{D80178A8-BD23-40B2-B81B-15584DC42457}" Name="Sheet.178" NameU="Sheet.178">
 					<Text>2004</Text>
 					<XForm>
-						<PinX Unit="IN_F">3.875000000000000</PinX>
-						<PinY Unit="IN_F">1.190104166666666</PinY>
+						<PinX Unit="IN_F">3.874029215976331</PinX>
+						<PinY Unit="IN_F">2.940104166666666</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="23" UniqueID="{3513BEDF-EE02-4610-A6EA-9A11513CB432}" Name="Sheet.23" NameU="Sheet.23">
 					<XForm>
-						<PinX Unit="IN_F">4.468750000000000</PinX>
-						<PinY Unit="IN_F">1.095052083333333</PinY>
+						<PinX Unit="IN_F">4.467779215976331</PinX>
+						<PinY Unit="IN_F">2.845052083333333</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="180" UniqueID="{AA2FE883-8A17-4589-AAE3-467623F5E275}" Name="Sheet.180" NameU="Sheet.180">
 					<XForm>
-						<PinX Unit="IN_F">4.750000000000000</PinX>
-						<PinY Unit="IN_F">1.000000000000000</PinY>
+						<PinX Unit="IN_F">4.749029215976331</PinX>
+						<PinY Unit="IN_F">2.750000000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="24" UniqueID="{80128186-BB35-4677-B0A4-F3A6BA94412C}" Name="Sheet.24" NameU="Sheet.24">
@@ -391,316 +382,310 @@
 
 active    wing   aircraft airplane   analysis  icing  automated  flaps   boeing budget  catia  cfd   circuit   configurations	cost	product development engineer environmental separated flow future geometry global  impact unmanned innovative  leadership matlab methods	 models optimize	potential  aerodynamics project race linear  simulation  system team technical 	quality  	CFD tests travel  tunnel validation wind atmospheric</Text>
 					<XForm>
-						<PinX Unit="IN_F">1.625000000000000</PinX>
-						<PinY Unit="IN_F">2.000000000000000</PinY>
-					</XForm>
-				</Shape>
-				<Shape ID="25" UniqueID="{BC11572D-B91C-4F9E-A891-ED29B7C542EE}" Name="Sheet.25" NameU="Sheet.25">
-					<XForm>
-						<PinX Unit="IN_F">7.291240157480313</PinX>
-						<PinY Unit="IN_F">9.694852829387878</PinY>
+						<PinX Unit="IN_F">1.624029215976331</PinX>
+						<PinY Unit="IN_F">3.750000000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="5" UniqueID="{6873C638-70E5-40CE-983E-7B39E2798232}" Name="Sheet.5" NameU="Sheet.5">
 					<Text>CFD</Text>
 					<XForm>
-						<PinX Unit="IN_F">2.588541666666666</PinX>
-						<PinY Unit="IN_F">4.913137437810943</PinY>
+						<PinX Unit="IN_F">2.587570882642997</PinX>
+						<PinY Unit="IN_F">6.663137437810943</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="28" UniqueID="{F6ED5D60-43F4-4A2B-BBC8-8D9A50C11C41}" Name="Sheet.28" NameU="Sheet.28">
 					<XForm>
-						<PinX Unit="IN_F">6.757812500000000</PinX>
-						<PinY Unit="IN_F">5.460937500000000</PinY>
+						<PinX Unit="IN_F">6.756841715976331</PinX>
+						<PinY Unit="IN_F">7.210937500000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="29" UniqueID="{49192757-1AAB-4869-8491-3D20F77FEF80}" Name="Sheet.29" NameU="Sheet.29">
 					<Text>/ Technical side-project</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.792643229166668</PinX>
-						<PinY Unit="IN_F">5.511459613022114</PinY>
+						<PinX Unit="IN_F">6.791672445142999</PinX>
+						<PinY Unit="IN_F">7.261459613022114</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="30" UniqueID="{FF0CFA6D-8603-4014-AD0A-173DB850F13B}" Name="Sheet.30" NameU="Sheet.30">
 					<Text>Developing a reusable system to carry NWS atmospheric sensors to 100,000ft and return to the launch station. </Text>
 					<XForm>
-						<PinX Unit="IN_F">6.757812500000000</PinX>
-						<PinY Unit="IN_F">5.148437499999998</PinY>
+						<PinX Unit="IN_F">6.756841715976331</PinX>
+						<PinY Unit="IN_F">6.898437499999998</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="31" UniqueID="{41F1B090-56C6-4653-9F34-A86813AC86C4}" Name="Sheet.31" NameU="Sheet.31">
 					<Text>High Altitude Glider</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.683268229166667</PinX>
-						<PinY Unit="IN_F">5.719997696560194</PinY>
+						<PinX Unit="IN_F">6.682297445142998</PinX>
+						<PinY Unit="IN_F">7.469997696560194</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="26" UniqueID="{FF251672-4D80-4043-9D60-516EF2DA5A8B}" Name="Sheet.26" NameU="Sheet.26">
 					<XForm>
-						<PinX Unit="IN_F">4.664062500000000</PinX>
-						<PinY Unit="IN_F">5.909201388888890</PinY>
+						<PinX Unit="IN_F">4.663091715976331</PinX>
+						<PinY Unit="IN_F">7.659201388888890</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="27" UniqueID="{04BB605C-B192-46ED-B6E5-3FFD015D9814}" Name="Sheet.27" NameU="Sheet.27">
 					<XForm>
-						<PinX Unit="IN_F">4.781250000000000</PinX>
-						<PinY Unit="IN_F">5.734375000000000</PinY>
+						<PinX Unit="IN_F">4.780279215976331</PinX>
+						<PinY Unit="IN_F">7.484375000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="11" UniqueID="{C5D6F533-2D6D-4AE9-B1A3-D3B0002C07C8}" Name="Sheet.11" NameU="Sheet.11">
 					<XForm>
-						<PinX Unit="IN_F">4.437500000000000</PinX>
-						<PinY Unit="IN_F">6.306125992063492</PinY>
+						<PinX Unit="IN_F">4.436529215976331</PinX>
+						<PinY Unit="IN_F">8.056125992063492</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="193" UniqueID="{9CF81326-AA40-4B70-8CC0-061E818AB778}" Name="Sheet.193" NameU="Sheet.193">
 					<XForm>
-						<PinX Unit="IN_F">6.773437500000000</PinX>
-						<PinY Unit="IN_F">1.656250000000000</PinY>
+						<PinX Unit="IN_F">6.772466715976331</PinX>
+						<PinY Unit="IN_F">3.406250000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="21" UniqueID="{62A836D7-0AEA-446D-8B16-A66E6DA141C6}" Name="Sheet.21" NameU="Sheet.21">
 					<Text>The Boeing Company</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.302195840689586</PinX>
-						<PinY Unit="IN_F">1.904183272296425</PinY>
+						<PinX Unit="IN_F">6.301225056665917</PinX>
+						<PinY Unit="IN_F">3.654183272296425</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="22" UniqueID="{870CD6BC-350A-4A4D-8A19-4A2FEB8B8CF3}" Name="Sheet.22" NameU="Sheet.22">
 					<Text>Established new methods for improving environmental impact of commercial airplanes.</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.389159699864992</PinX>
-						<PinY Unit="IN_F">1.378823782852218</PinY>
+						<PinX Unit="IN_F">6.388188915841323</PinX>
+						<PinY Unit="IN_F">3.128823782852218</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="188" UniqueID="{C4A56185-5CB4-4C7C-A111-C1FB90A74B8C}" Name="Sheet.188" NameU="Sheet.188">
 					<Text>/ Environmental Performance</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.827977334094922</PinX>
-						<PinY Unit="IN_F">1.782986111111111</PinY>
+						<PinX Unit="IN_F">6.827006550071253</PinX>
+						<PinY Unit="IN_F">3.532986111111111</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="199" UniqueID="{AFC6A518-DF7B-484B-A35A-B0BF951D624E}" Name="Sheet.199" NameU="Sheet.199">
 					<Text>2013</Text>
 					<XForm>
-						<PinX Unit="IN_F">4.078125000000000</PinX>
-						<PinY Unit="IN_F">6.485069444444446</PinY>
+						<PinX Unit="IN_F">4.077154215976331</PinX>
+						<PinY Unit="IN_F">8.235069444444445</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="200" UniqueID="{50842D9A-ACD6-4FB7-9FEA-0A3E3DA28988}" Name="Sheet.200" NameU="Sheet.200">
 					<XForm>
-						<PinX Unit="IN_F">4.647321428571430</PinX>
-						<PinY Unit="IN_F">6.485069444444444</PinY>
+						<PinX Unit="IN_F">4.646350644547761</PinX>
+						<PinY Unit="IN_F">8.235069444444445</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="201" UniqueID="{F099BBC8-A5A3-4E7C-B3C2-F1D9446099B8}" Name="Sheet.201" NameU="Sheet.201">
 					<XForm>
-						<PinX Unit="IN_F">4.593750000000000</PinX>
-						<PinY Unit="IN_F">6.485069444444445</PinY>
+						<PinX Unit="IN_F">4.592779215976331</PinX>
+						<PinY Unit="IN_F">8.235069444444445</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="202" UniqueID="{03F44C07-F4A0-45B1-9655-781DE722C2EF}" Name="Sheet.202" NameU="Sheet.202">
 					<XForm>
-						<PinX Unit="IN_F">6.648437500000000</PinX>
-						<PinY Unit="IN_F">6.208333333333334</PinY>
+						<PinX Unit="IN_F">6.647466715976331</PinX>
+						<PinY Unit="IN_F">7.958333333333334</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="203" UniqueID="{BE34C84E-98D7-4B12-B537-23C5535CCC71}" Name="Sheet.203" NameU="Sheet.203">
 					<Text>The Boeing Company</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.245867768595041</PinX>
-						<PinY Unit="IN_F">6.465277777777779</PinY>
+						<PinX Unit="IN_F">6.244896984571373</PinX>
+						<PinY Unit="IN_F">8.215277777777779</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="204" UniqueID="{4E531072-B339-4DB9-8E49-1D33849DF6AA}" Name="Sheet.204" NameU="Sheet.204">
 					<Text>/ Lead Engineer: Unmanned Configurations</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.690082644628097</PinX>
-						<PinY Unit="IN_F">6.296875000000000</PinY>
+						<PinX Unit="IN_F">6.689111860604428</PinX>
+						<PinY Unit="IN_F">8.046875000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="205" UniqueID="{883D2345-5EA7-498F-A96B-15B6FFC11286}" Name="Sheet.205" NameU="Sheet.205">
 					<Text>Responsible for aerodynamic configurations of unmanned systems.</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.356921487603313</PinX>
-						<PinY Unit="IN_F">6.017361111111111</PinY>
+						<PinX Unit="IN_F">6.355950703579644</PinX>
+						<PinY Unit="IN_F">7.767361111111111</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="192" UniqueID="{0A82CDEF-6C8F-4CDC-A713-829779A3B38A}" Name="Sheet.192" NameU="Sheet.192">
 					<XForm>
-						<PinX Unit="IN_F">6.727207568807341</PinX>
-						<PinY Unit="IN_F">2.656250000000000</PinY>
+						<PinX Unit="IN_F">6.726236784783672</PinX>
+						<PinY Unit="IN_F">4.406250000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="140" UniqueID="{68F1B0B5-0105-449C-81BA-70D2C40ECB50}" Name="Sheet.140" NameU="Sheet.140">
 					<Text>Product Development - Aero design and performance analysis – from handbook methods to CFD, WT, &amp; flight test.</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.517327540426625</PinX>
-						<PinY Unit="IN_F">2.375069785618580</PinY>
+						<PinX Unit="IN_F">6.516356756402956</PinX>
+						<PinY Unit="IN_F">4.125069785618580</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="158" UniqueID="{8B9FA161-EFAD-404C-A969-773B80E3FF24}" Name="Sheet.158" NameU="Sheet.158">
 					<Text>The Boeing Company</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.351945473002425</PinX>
-						<PinY Unit="IN_F">2.937430214381419</PinY>
+						<PinX Unit="IN_F">6.350974688978756</PinX>
+						<PinY Unit="IN_F">4.687430214381419</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="191" UniqueID="{35E4816E-523D-4A2F-9E89-694A8FBC240A}" Name="Sheet.191" NameU="Sheet.191">
 					<Text>/ Aerodynamics</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.776443635198540</PinX>
-						<PinY Unit="IN_F">2.796250341174133</PinY>
+						<PinX Unit="IN_F">6.775472851174872</PinX>
+						<PinY Unit="IN_F">4.546250341174133</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="207" UniqueID="{B2845EAE-B9C3-4B11-8222-9006F1D62E9D}" Name="Sheet.207" NameU="Sheet.207">
 					<XForm>
-						<PinX Unit="IN_F">4.398382310898446</PinX>
-						<PinY Unit="IN_F">6.482210437101306</PinY>
+						<PinX Unit="IN_F">4.397411526874778</PinX>
+						<PinY Unit="IN_F">8.232210437101305</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="208" UniqueID="{9D78A0B9-4E0E-4985-9BF8-D3F0E4E45866}" Name="Sheet.208" NameU="Sheet.208">
 					<XForm>
-						<PinX Unit="IN_F">6.648437500000000</PinX>
-						<PinY Unit="IN_F">7.084809027777781</PinY>
+						<PinX Unit="IN_F">6.647466715976331</PinX>
+						<PinY Unit="IN_F">8.834809027777780</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="209" UniqueID="{0C079B80-93F8-4FA8-8323-56E29382C5AF}" Name="Sheet.209" NameU="Sheet.209">
 					<Text>General Atomics</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.245867768595041</PinX>
-						<PinY Unit="IN_F">7.372688230994157</PinY>
+						<PinX Unit="IN_F">6.244896984571373</PinX>
+						<PinY Unit="IN_F">9.122688230994157</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="210" UniqueID="{4174DB3D-90B4-4E1C-97CA-ACA0CC38DB7A}" Name="Sheet.210" NameU="Sheet.210">
-					<Text>/ Lead Engineer: Aerothermodynamics</Text>
+					<Text>/ Lead Engineer: Hypersonics</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.690082644628097</PinX>
-						<PinY Unit="IN_F">7.211733375321981</PinY>
+						<PinX Unit="IN_F">6.689111860604428</PinX>
+						<PinY Unit="IN_F">8.961733375321982</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="211" UniqueID="{8EC3DAE9-CB76-41E2-ADFF-90535A5B480D}" Name="Sheet.211" NameU="Sheet.211">
-					<Text>Hypersonic vehicle design of a maneuverable guided interceptor exo-atmospheric kinetic energy weapon.</Text>
+					<Text> Responsible for aerothermo R&amp;D on railgun programs.</Text>
 					<XForm>
-						<PinX Unit="IN_F">6.356921487603305</PinX>
-						<PinY Unit="IN_F">6.870844755116963</PinY>
+						<PinX Unit="IN_F">6.355950703579636</PinX>
+						<PinY Unit="IN_F">8.620844755116963</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="212" UniqueID="{AAB486C1-0289-4766-A421-39D539AED08C}" Name="Sheet.212" NameU="Sheet.212">
 					<Text>2014</Text>
 					<XForm>
-						<PinX Unit="IN_F">4.078125000000000</PinX>
-						<PinY Unit="IN_F">7.156250000000000</PinY>
+						<PinX Unit="IN_F">4.077154215976331</PinX>
+						<PinY Unit="IN_F">8.906250000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="214" UniqueID="{69E0EC13-9969-4A39-A900-305F57154E91}" Name="Sheet.214" NameU="Sheet.214">
 					<XForm>
-						<PinX Unit="IN_F">4.453048008700229</PinX>
-						<PinY Unit="IN_F">7.153390992656862</PinY>
+						<PinX Unit="IN_F">4.452077224676560</PinX>
+						<PinY Unit="IN_F">8.903390992656863</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="216" UniqueID="{F533A30D-8450-47E2-86A8-7147BBEC6CEB}" Name="Sheet.216" NameU="Sheet.216">
 					<Text>PROFILE</Text>
 					<XForm>
-						<PinX Unit="IN_F">2.531250000000000</PinX>
-						<PinY Unit="IN_F">7.715277777777780</PinY>
+						<PinX Unit="IN_F">2.530279215976331</PinX>
+						<PinY Unit="IN_F">9.465277777777780</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="218" UniqueID="{C4B819CA-7837-4F8B-8F6A-8DE4C35CB10A}" Name="Sheet.218" NameU="Sheet.218">
 					<Text>B.S. Purdue</Text>
 					<XForm>
-						<PinX Unit="IN_F">4.031250000000000</PinX>
-						<PinY Unit="IN_F">2.875000000000000</PinY>
+						<PinX Unit="IN_F">4.030279215976331</PinX>
+						<PinY Unit="IN_F">4.625000000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="219" UniqueID="{8A637CE1-636F-48D4-AFC2-E2EA7E8E76FF}" Name="Sheet.219" NameU="Sheet.219">
 					<Text>MBA U.W.</Text>
 					<XForm>
-						<PinX Unit="IN_F">4.171875000000000</PinX>
-						<PinY Unit="IN_F">5.829861111111112</PinY>
+						<PinX Unit="IN_F">4.170904215976331</PinX>
+						<PinY Unit="IN_F">7.579861111111112</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="213" UniqueID="{F3779654-74DE-44B5-8F25-A924C49D6E22}" Name="Sheet.213" NameU="Sheet.213">
 					<XForm>
-						<PinX Unit="IN_F">4.726562500000000</PinX>
-						<PinY Unit="IN_F">7.312500000000000</PinY>
+						<PinX Unit="IN_F">4.725591715976331</PinX>
+						<PinY Unit="IN_F">9.062500000000000</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="220" UniqueID="{79AD809C-FCEA-475A-A7DF-2B529FAD261A}" Name="Sheet.220" NameU="Sheet.220">
 					<XForm>
-						<PinX Unit="IN_F">1.059840051961335</PinX>
-						<PinY Unit="IN_F">7.192122346749072</PinY>
+						<PinX Unit="IN_F">1.058869267937666</PinX>
+						<PinY Unit="IN_F">8.942122346749072</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="228" UniqueID="{95F4E69F-7C88-4021-8431-07AA87C02E92}" Name="Sheet.228" NameU="Sheet.228">
 					<XForm>
-						<PinX Unit="IN_F">4.796875000000000</PinX>
-						<PinY Unit="IN_F">2.829861111111112</PinY>
+						<PinX Unit="IN_F">4.795904215976331</PinX>
+						<PinY Unit="IN_F">4.579861111111113</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="217" UniqueID="{E089A421-A891-48AD-89D7-4BC86C193030}" Name="Sheet.217" NameU="Sheet.217">
 					<XForm>
-						<PinX Unit="IN_F">4.592459862385319</PinX>
-						<PinY Unit="IN_F">2.700347222222222</PinY>
+						<PinX Unit="IN_F">4.591489078361650</PinX>
+						<PinY Unit="IN_F">4.450347222222222</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="229" UniqueID="{64E7B9A1-6614-4732-80C8-9CDA484B887F}" Name="Sheet.229" NameU="Sheet.229">
 					<XForm>
-						<PinX Unit="IN_F">1.059840051961335</PinX>
-						<PinY Unit="IN_F">6.965843957227963</PinY>
+						<PinX Unit="IN_F">1.058869267937666</PinX>
+						<PinY Unit="IN_F">8.715843957227964</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="230" UniqueID="{4A024BD0-259B-4663-90AC-4D2D71F188ED}" Name="Sheet.230" NameU="Sheet.230">
 					<XForm>
-						<PinX Unit="IN_F">1.065159948038666</PinX>
-						<PinY Unit="IN_F">6.725378391264045</PinY>
+						<PinX Unit="IN_F">1.064189164014997</PinX>
+						<PinY Unit="IN_F">8.475378391264044</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="231" UniqueID="{7492A95F-6D94-4FE5-9329-ABBD0FEC1A43}" Name="Sheet.231" NameU="Sheet.231">
 					<XForm>
-						<PinX Unit="IN_F">1.059840051961335</PinX>
-						<PinY Unit="IN_F">6.521946882715993</PinY>
+						<PinX Unit="IN_F">1.058869267937666</PinX>
+						<PinY Unit="IN_F">8.271946882715994</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="232" UniqueID="{CF654520-CE81-4C45-8222-6DB76822D655}" Name="Sheet.232" NameU="Sheet.232">
 					<Text>Works at General Atomics</Text>
 					<XForm>
-						<PinX Unit="IN_F">1.966090051961334</PinX>
-						<PinY Unit="IN_F">6.964421233434421</PinY>
+						<PinX Unit="IN_F">1.965119267937665</PinX>
+						<PinY Unit="IN_F">8.714421233434422</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="233" UniqueID="{386CE194-B379-49D4-9090-D44AAB59BD2A}" Name="Sheet.233" NameU="Sheet.233">
 					<Text>Lives in San Diego</Text>
 					<XForm>
-						<PinX Unit="IN_F">1.966090051961335</PinX>
-						<PinY Unit="IN_F">7.162878391264045</PinY>
+						<PinX Unit="IN_F">1.965119267937666</PinX>
+						<PinY Unit="IN_F">8.912878391264044</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="234" UniqueID="{A306E3A1-DFB7-4933-ACCB-129191395BEE}" Name="Sheet.234" NameU="Sheet.234">
 					<Text>BS Aeronautics | Purdue University</Text>
 					<XForm>
-						<PinX Unit="IN_F">2.153590051961335</PinX>
-						<PinY Unit="IN_F">6.725378391264045</PinY>
+						<PinX Unit="IN_F">2.152619267937666</PinX>
+						<PinY Unit="IN_F">8.475378391264044</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="235" UniqueID="{06F04ADE-9333-45F4-96DA-53EF15467AE9}" Name="Sheet.235" NameU="Sheet.235">
 					<Text>MBA | University of Washington</Text>
 					<XForm>
-						<PinX Unit="IN_F">2.153590051961335</PinX>
-						<PinY Unit="IN_F">6.521946882715993</PinY>
+						<PinX Unit="IN_F">2.152619267937666</PinX>
+						<PinY Unit="IN_F">8.271946882715994</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="236" UniqueID="{A952D850-C115-4972-A518-EC89456DB47F}" Name="Sheet.236" NameU="Sheet.236">
 					<XForm>
-						<PinX Unit="IN_F">1.068987462938518</PinX>
-						<PinY Unit="IN_F">6.275583636326712</PinY>
+						<PinX Unit="IN_F">1.068016678914849</PinX>
+						<PinY Unit="IN_F">8.025583636326712</PinY>
 					</XForm>
 				</Shape>
 				<Shape ID="237" UniqueID="{7212D9FE-95CD-42AA-90BC-4E35C8260EC9}" Name="Sheet.237" NameU="Sheet.237">
-					<Text>clayton.is</Text>
+					<Text>http://clayton.is</Text>
 					<XForm>
-						<PinX Unit="IN_F">2.156250000000000</PinX>
-						<PinY Unit="IN_F">6.280581318495009</PinY>
+						<PinX Unit="IN_F">2.155279215976331</PinX>
+						<PinY Unit="IN_F">8.030581318495010</PinY>
 					</XForm>
 				</Shape>
 			</Shapes>
